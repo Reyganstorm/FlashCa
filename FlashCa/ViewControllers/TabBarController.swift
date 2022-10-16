@@ -11,7 +11,7 @@ class TabBarController: UITabBarController, Routable {
     
     var router: MainRouter?
     
-    let first = FirstViewController()
+    let first = ListGroupController()
     let second = SecondViewController()
     let third = ThirdViewController()
     let four = FourViewController()

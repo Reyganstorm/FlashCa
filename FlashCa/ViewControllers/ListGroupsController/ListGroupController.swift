@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, Routable {
+class ListGroupController: UIViewController, Routable {
     var router: MainRouter?
     
     override func viewDidLoad() {

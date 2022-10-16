@@ -27,11 +27,6 @@ class MainRouter: NSObject {
         let vc = TabBarController()
         pushViewController(vc: vc, animated: true)
     }
-    
-    func pushVC() {
-        let vc = FirstViewController()
-        pushViewController(vc: vc, animated: true)
-    }
     // MARK: - Pablic func
     
     func back() {
