@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12EF047926E0AF415AF61BE /* Pods_FlashCa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */; };
 		E8419E4A28FC69070069B2A4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4928FC69070069B2A4 /* TabBarController.swift */; };
 		E8419E4C28FC69260069B2A4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4B28FC69260069B2A4 /* SecondViewController.swift */; };
 		E8419E4E28FC69330069B2A4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4D28FC69330069B2A4 /* ThirdViewController.swift */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.release.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.release.xcconfig"; sourceTree = "<group>"; };
+		E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.debug.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.debug.xcconfig"; sourceTree = "<group>"; };
 		E8419E4928FC69070069B2A4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E8419E4B28FC69260069B2A4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E8419E4D28FC69330069B2A4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		E8F8B06C28F35A990038F702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8F8B07528F35C250038F702 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E8F8B07728F35C3D0038F702 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12EF047926E0AF415AF61BE /* Pods_FlashCa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DCAD8087BB333531F343071 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */,
+				882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFC28B840C614D513EE0185F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8F8B05228F35A980038F702 = {
 			isa = PBXGroup;
 			children = (
 				E8F8B05D28F35A980038F702 /* FlashCa */,
 				E8F8B05C28F35A980038F702 /* Products */,
+				6DCAD8087BB333531F343071 /* Pods */,
+				BFC28B840C614D513EE0185F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8F8B06F28F35A990038F702 /* Build configuration list for PBXNativeTarget "FlashCa" */;
 			buildPhases = (
+				251956A7C21E08DCC812FA12 /* [CP] Check Pods Manifest.lock */,
 				E8F8B05728F35A980038F702 /* Sources */,
 				E8F8B05828F35A980038F702 /* Frameworks */,
 				E8F8B05928F35A980038F702 /* Resources */,
+				B42353810FA5C7C9CC12C858 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		251956A7C21E08DCC812FA12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashCa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42353810FA5C7C9CC12C858 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashCa/Pods-FlashCa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashCa/Pods-FlashCa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashCa/Pods-FlashCa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8F8B05728F35A980038F702 /* Sources */ = {
@@ -318,6 +387,7 @@
 		};
 		E8F8B07028F35A990038F702 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,6 +415,7 @@
 		};
 		E8F8B07128F35A990038F702 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

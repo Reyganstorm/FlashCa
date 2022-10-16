@@ -13,8 +13,13 @@ class FirstViewController: UIViewController, Routable {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .link
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        self.navigationItem.standardAppearance = appearance
+        self.navigationItem.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.backgroundColor = .white
         
     }
 
