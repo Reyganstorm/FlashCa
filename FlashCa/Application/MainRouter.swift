@@ -23,8 +23,13 @@ class MainRouter: NSObject {
     
     // MARK: - PUSH ViewController
     
+    func pushTabBar() {
+        let vc = TabBarController()
+        pushViewController(vc: vc, animated: true)
+    }
+    
     func pushVC() {
-        let vc = ViewController()
+        let vc = FirstViewController()
         pushViewController(vc: vc, animated: true)
     }
     // MARK: - Pablic func
