@@ -1,5 +1,5 @@
 //
-//  FourViewController.swift
+//  SettingsController.swift
 //  FlashCa
 //
 //  Created by Руслан Штыбаев on 16.10.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FourViewController: UIViewController , Routable {
+class SettingsController: UIViewController , Routable {
     
     var router: MainRouter?
     
