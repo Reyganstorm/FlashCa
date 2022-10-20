@@ -83,6 +83,14 @@
 			path = ListGroupsController;
 			sourceTree = "<group>";
 		};
+		E8E5BB832900968B0049A07A /* SettingsController */ = {
+			isa = PBXGroup;
+			children = (
+				E8419E4F28FC693B0069B2A4 /* SettingsController.swift */,
+			);
+			path = SettingsController;
+			sourceTree = "<group>";
+		};
 		E8F8B05228F35A980038F702 = {
 			isa = PBXGroup;
 			children = (
@@ -135,11 +143,11 @@
 		E8F8B07428F35B440038F702 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E8E5BB832900968B0049A07A /* SettingsController */,
 				E80BA3D028FC86500044BDD2 /* ListGroupsController */,
 				E8419E4928FC69070069B2A4 /* TabBarController.swift */,
 				E8419E4B28FC69260069B2A4 /* SecondViewController.swift */,
 				E8419E4D28FC69330069B2A4 /* ThirdViewController.swift */,
-				E8419E4F28FC693B0069B2A4 /* SettingsController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

@@ -71,7 +71,7 @@ class TabBarController: UITabBarController, Routable {
         tabBar.itemWidth = width / 5
         tabBar.itemPositioning = .centered
         
-        roundLayer.fillColor = UIColor.white.cgColor
+        roundLayer.fillColor = UIColor.gray.cgColor
         tabBar.tintColor = UIColor.black
         tabBar.unselectedItemTintColor = UIColor.gray
         
