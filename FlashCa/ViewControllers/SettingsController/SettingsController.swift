@@ -11,21 +11,19 @@ class SettingsController: UIViewController , Routable {
     
     var router: MainRouter?
     
+    private let settingsOption = [
+        "Account",
+        "touch/face ID",
+        "Language",
+        "About App"
+    ]
+    
+    // About App - в нем будет 2 кнопки снизу поделиться и поддержка
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .blue
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
