@@ -11,6 +11,8 @@ class SettingsController: UIViewController , Routable {
     
     var router: MainRouter?
     
+    let baseView: SettingsView = SettingsView()
+    
     private let settingsOption = [
         "Account",
         "touch/face ID",
@@ -18,12 +20,46 @@ class SettingsController: UIViewController , Routable {
         "About App"
     ]
     
-    // About App - в нем будет 2 кнопки снизу поделиться и поддержка
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
+        baseView.addTableViewDelegate(dataSource: self, delegate: self)
+        
+        navigationItem.title = "Settings"
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        self.navigationItem.standardAppearance = appearance
+        self.navigationItem.scrollEdgeAppearance = appearance
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        baseView.frame = view.bounds
+        view.addSubview(baseView)
     }
 
+}
+
+
+extension SettingsController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        settingsOption.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTVCell.identifier, for: indexPath) as! SettingsTVCell
+        let optionName = settingsOption[indexPath.row]
+        cell.configure(option: optionName)
+        return cell
+    }
+    
+    
+}
+
+extension SettingsController: UITableViewDelegate {
+    
 }

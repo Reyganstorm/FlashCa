@@ -13,7 +13,6 @@ class TabBarController: UITabBarController, Routable {
     
     let first = ListGroupController()
     let second = SecondViewController()
-    let third = ThirdViewController()
     let four = SettingsController()
     
     override func viewDidLoad() {
@@ -27,19 +26,16 @@ class TabBarController: UITabBarController, Routable {
         
         first.router = router
         second.router = router
-        third.router = router
         four.router = router
         
         generateTabBarItems(vc: first, title: "First", image: UIImage(systemName: "person.crop.circle.fill"))
         generateTabBarItems(vc: second, title: "Second", image: UIImage(systemName: "seal"))
-        generateTabBarItems(vc: third, title: "third", image: UIImage(systemName: "command.circle"))
         generateTabBarItems(vc: four, title: "Settings", image: UIImage(systemName: "gear"))
         
         viewControllers = [
             UINavigationController(rootViewController: first),
             second,
-            third,
-            four
+            UINavigationController(rootViewController: four)
         ]
     }
     
