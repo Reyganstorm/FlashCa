@@ -13,10 +13,10 @@ class SettingsTVCell: UITableViewCell {
 
     private let backView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .mainPinkLight
         view.layer.cornerRadius = 10
         view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.darkGray.cgColor
+        view.layer.borderColor = UIColor.mainDark?.cgColor
         return view
     }()
     

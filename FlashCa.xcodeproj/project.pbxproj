@@ -15,6 +15,7 @@
 		E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4F28FC693B0069B2A4 /* SettingsController.swift */; };
 		E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B72968BD21005F7BCB /* SettingsView.swift */; };
 		E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */; };
+		E89350D32969E49D0066197C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89350D22969E49D0066197C /* Colors.swift */; };
 		E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B05E28F35A980038F702 /* AppDelegate.swift */; };
 		E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B06028F35A980038F702 /* SceneDelegate.swift */; };
 		E8F8B06328F35A980038F702 /* ListGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B06228F35A980038F702 /* ListGroupController.swift */; };
@@ -34,6 +35,7 @@
 		E8419E4F28FC693B0069B2A4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E84251B72968BD21005F7BCB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
+		E89350D22969E49D0066197C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E8F8B05B28F35A980038F702 /* FlashCa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F8B05E28F35A980038F702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F8B06028F35A980038F702 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		E88741C9295C603D00AAC920 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E89350D22969E49D0066197C /* Colors.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				E8F8B06328F35A980038F702 /* ListGroupController.swift in Sources */,
 				E8419E4A28FC69070069B2A4 /* TabBarController.swift in Sources */,
 				E8419E4C28FC69260069B2A4 /* SecondViewController.swift in Sources */,
+				E89350D32969E49D0066197C /* Colors.swift in Sources */,
 				E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */,
 				E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */,
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
