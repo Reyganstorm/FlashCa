@@ -11,7 +11,7 @@ class SettingsController: UIViewController , Routable {
     
     var router: MainRouter?
     
-    let baseView: SettingsView = SettingsView()
+    private let baseView: SettingsView = SettingsView()
     
     private let settingsOption = [
         "Account",
@@ -21,20 +21,24 @@ class SettingsController: UIViewController , Routable {
     ]
     
     
-    
+    // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .mainLight
         baseView.addTableViewDelegate(dataSource: self, delegate: self)
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationItem.title = "Settings"
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = .mainPink
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         self.navigationItem.standardAppearance = appearance
         self.navigationItem.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
     
     override func viewWillLayoutSubviews() {
@@ -46,6 +50,7 @@ class SettingsController: UIViewController , Routable {
 }
 
 
+// MARK: - UITable DataSourse
 extension SettingsController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         settingsOption.count
@@ -61,6 +66,7 @@ extension SettingsController: UITableViewDataSource {
     
 }
 
+// MARK: - UITable Delegate
 extension SettingsController: UITableViewDelegate {
     
 }
