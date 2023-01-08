@@ -7,17 +7,15 @@
 
 import UIKit
 
-class ListGroupController: UIViewController, Routable {
+class MainController: UIViewController, Routable {
     var router: MainRouter?
     
-    let baseView: ListGroupView = ListGroupView()
+    let baseView: MainView = MainView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        baseView.addTableViewDelegate(dataSource: self, delegate: self)
-        
-        view.backgroundColor = .link
+        view.backgroundColor = .white
         
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -32,19 +30,5 @@ class ListGroupController: UIViewController, Routable {
         super.viewWillLayoutSubviews()
         baseView.frame = view.bounds
         view.addSubview(baseView)
-    }
-    
-
-}
-
-extension ListGroupController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        13
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ListTableViewCell.identifier, for: indexPath) as! ListTableViewCell
-        cell.configure()
-        return cell
     }
 }

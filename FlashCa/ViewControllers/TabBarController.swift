@@ -11,9 +11,9 @@ class TabBarController: UITabBarController, Routable {
     
     var router: MainRouter?
     
-    let first = ListGroupController()
-    let second = SecondViewController()
-    let four = SettingsController()
+    let main = MainController()
+    let edit = EditingController()
+    let settings = SettingsController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +24,18 @@ class TabBarController: UITabBarController, Routable {
     
     private func generateTabBar() {
         
-        first.router = router
-        second.router = router
-        four.router = router
+        main.router = router
+        edit.router = router
+        settings.router = router
         
-        generateTabBarItems(vc: first, title: "First", image: UIImage(systemName: "person.crop.circle.fill"))
-        generateTabBarItems(vc: second, title: "Second", image: UIImage(systemName: "seal"))
-        generateTabBarItems(vc: four, title: "Settings", image: UIImage(systemName: "gear"))
+        generateTabBarItems(vc: main, title: "Main", image: UIImage(systemName: "person.crop.circle.fill"))
+        generateTabBarItems(vc: edit, title: "Edit", image: UIImage(systemName: "seal"))
+        generateTabBarItems(vc: settings, title: "Settings", image: UIImage(systemName: "gear"))
         
         viewControllers = [
-            UINavigationController(rootViewController: first),
-            second,
-            UINavigationController(rootViewController: four)
+            UINavigationController(rootViewController: main),
+            edit,
+            UINavigationController(rootViewController: settings)
         ]
     }
     
@@ -67,9 +67,9 @@ class TabBarController: UITabBarController, Routable {
         tabBar.itemWidth = width / 5
         tabBar.itemPositioning = .centered
         
-        roundLayer.fillColor = UIColor.gray.cgColor
+        roundLayer.fillColor = UIColor.mainMedium?.cgColor
         tabBar.tintColor = UIColor.black
-        tabBar.unselectedItemTintColor = UIColor.gray
+        tabBar.unselectedItemTintColor = UIColor.white
         
     }
 }

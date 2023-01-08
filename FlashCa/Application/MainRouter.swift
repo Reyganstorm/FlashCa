@@ -30,7 +30,7 @@ class MainRouter: NSObject {
     
 
     func pushSecondView() {
-        let vc = SecondViewController()
+        let vc = EditingController()
         pushViewController(vc: vc, animated: true)
     }
     // MARK: - Pablic func
