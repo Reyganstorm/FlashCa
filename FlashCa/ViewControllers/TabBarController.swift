@@ -7,7 +7,13 @@
 
 import UIKit
 
-class TabBarController: UITabBarController, Routable {
+enum Tabs: Int {
+    case main
+    case edit
+    case settings
+}
+
+final class TabBarController: UITabBarController, Routable {
     
     var router: MainRouter?
     
@@ -19,10 +25,17 @@ class TabBarController: UITabBarController, Routable {
         super.viewDidLoad()
 
         generateTabBar()
-        setTabBarAppearance()
     }
     
     private func generateTabBar() {
+        
+        tabBar.tintColor = Resources.Colors.activ
+        tabBar.barTintColor = Resources.Colors.inActiv
+        tabBar.backgroundColor = .white
+        
+        tabBar.layer.borderColor = UIColor.gray.cgColor
+        tabBar.layer.borderWidth = 1
+        tabBar.layer.masksToBounds = true
         
         main.router = router
         edit.router = router
@@ -44,32 +57,4 @@ class TabBarController: UITabBarController, Routable {
         vc.tabBarItem.image = image
     }
     
-    private func setTabBarAppearance() {
-        let positionOnX: CGFloat = 10
-        let positionOnY: CGFloat = 14
-        
-        let width = tabBar.bounds.width - positionOnX * 2
-        let height = tabBar.bounds.height + positionOnY * 2
-        
-        let roundLayer = CAShapeLayer()
-        
-        let bezierPath = UIBezierPath(
-            roundedRect: CGRect(
-                x: positionOnX,
-                y: tabBar.bounds.minY - positionOnY,
-                width: width,
-                height: height),
-            cornerRadius: height/2)
-        
-        roundLayer.path = bezierPath.cgPath
-        
-        tabBar.layer.insertSublayer(roundLayer, at: 0)
-        tabBar.itemWidth = width / 5
-        tabBar.itemPositioning = .centered
-        
-        roundLayer.fillColor = UIColor.mainMedium?.cgColor
-        tabBar.tintColor = UIColor.black
-        tabBar.unselectedItemTintColor = UIColor.white
-        
-    }
 }

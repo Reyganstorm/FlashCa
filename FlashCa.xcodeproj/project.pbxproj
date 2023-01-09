@@ -13,6 +13,7 @@
 		E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4F28FC693B0069B2A4 /* SettingsController.swift */; };
 		E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B72968BD21005F7BCB /* SettingsView.swift */; };
 		E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */; };
+		E84C1415296C742D0088EE43 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C1414296C742D0088EE43 /* Resources.swift */; };
 		E88E6CCC296ABADD007B86E1 /* EditingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* EditingController.swift */; };
 		E89350D32969E49D0066197C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89350D22969E49D0066197C /* Colors.swift */; };
 		E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B05E28F35A980038F702 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		E8419E4F28FC693B0069B2A4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E84251B72968BD21005F7BCB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
+		E84C1414296C742D0088EE43 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		E88E6CCB296ABADD007B86E1 /* EditingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingController.swift; sourceTree = "<group>"; };
 		E89350D22969E49D0066197C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E8F8B05B28F35A980038F702 /* FlashCa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E89350D22969E49D0066197C /* Colors.swift */,
+				E84C1414296C742D0088EE43 /* Resources.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */,
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
 				E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */,
+				E84C1415296C742D0088EE43 /* Resources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,10 +29,10 @@ class MainRouter: NSObject {
     }
     
 
-    func pushSecondView() {
-        let vc = EditingController()
-        pushViewController(vc: vc, animated: true)
-    }
+//    func pushSecondView() {
+//        let vc = EditingController()
+//        pushViewController(vc: vc, animated: true)
+//    }
     // MARK: - Pablic func
     
     func back() {
