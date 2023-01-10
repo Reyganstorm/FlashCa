@@ -24,7 +24,7 @@ class SettingsController: UIViewController , Routable {
     // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .mainLight
+        view.backgroundColor = Resources.Colors.mainDark
         baseView.addTableViewDelegate(dataSource: self, delegate: self)
     }
     
@@ -33,7 +33,7 @@ class SettingsController: UIViewController , Routable {
         navigationItem.title = "Settings"
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .mainPink
+        appearance.backgroundColor = Resources.Colors.activ
         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         self.navigationItem.standardAppearance = appearance

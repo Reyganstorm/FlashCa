@@ -28,11 +28,11 @@ class MainRouter: NSObject {
         pushViewController(vc: vc, animated: true)
     }
     
+    func pushWelcomeVC() {
+        let vc = WelcomeViewController()
+        pushViewController(vc: vc, animated: true)
+    }
 
-//    func pushSecondView() {
-//        let vc = EditingController()
-//        pushViewController(vc: vc, animated: true)
-//    }
     // MARK: - Pablic func
     
     func back() {

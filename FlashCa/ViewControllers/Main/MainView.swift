@@ -11,12 +11,11 @@ import SnapKit
 
 class MainView: UIView {
     
-    private let scrollView: UIScrollView = {
-        let scroll = UIScrollView()
-        scroll.backgroundColor = .mainPinkLight
-        return scroll
+    private let welcomeView: WelcomeNavView = {
+        let view = WelcomeNavView()
+        
+        return view
     }()
-    
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -26,15 +25,18 @@ class MainView: UIView {
     }
     
     private func setupViews() {
-        addSubview(scrollView)
+        addSubview(welcomeView)
+        
     }
     
     private func setupConstraints() {
-        scrollView.snp.makeConstraints { make in
+        welcomeView.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.height.equalTo(10000)
             make.left.right.equalToSuperview()
-            make.bottom.equalToSuperview()
         }
+    }
+    
+    func setTitleToWelcomeView(_ name: String) {
+        welcomeView.setTitle("Welcome, \(name)!")
     }
 }

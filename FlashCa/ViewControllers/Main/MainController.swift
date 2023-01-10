@@ -17,18 +17,23 @@ class MainController: UIViewController, Routable {
         
         view.backgroundColor = .white
         
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .white
-        self.navigationItem.standardAppearance = appearance
-        self.navigationItem.scrollEdgeAppearance = appearance
-        navigationController?.navigationBar.prefersLargeTitles = true
+//        let appearance = UINavigationBarAppearance()
+//        appearance.configureWithOpaqueBackground()
+//        appearance.backgroundColor = .white
+//        self.navigationItem.standardAppearance = appearance
+//        self.navigationItem.scrollEdgeAppearance = appearance
+//        navigationController?.navigationBar.prefersLargeTitles = true
         
+        configure()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         baseView.frame = view.bounds
         view.addSubview(baseView)
+    }
+    
+    private func configure() {
+        baseView.setTitleToWelcomeView("Sweetheart")
     }
 }

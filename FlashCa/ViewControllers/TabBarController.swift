@@ -46,7 +46,7 @@ final class TabBarController: UITabBarController, Routable {
         generateTabBarItems(vc: settings, title: "Settings", image: UIImage(systemName: "gear"))
         
         viewControllers = [
-            UINavigationController(rootViewController: main),
+            main,
             edit,
             UINavigationController(rootViewController: settings)
         ]
