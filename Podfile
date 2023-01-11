@@ -7,5 +7,6 @@ target 'FlashCa' do
 
   # Pods for FlashCa
 pod 'SnapKit', '~> 5.6.0'
+pod 'RealmSwift', '~>10'
 
 end
