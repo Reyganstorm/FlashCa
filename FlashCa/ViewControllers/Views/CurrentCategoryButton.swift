@@ -9,7 +9,8 @@ import UIKit
 
 final class CurrentCategoryButton: UIButton {
     
-    private let label = UILabel()
+    private let titleCategoryLabel = UILabel()
+    private let categoryLabel = UILabel()
     private let iconView = UIImageView()
     
     override init(frame: CGRect) {
@@ -24,15 +25,16 @@ final class CurrentCategoryButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setTitle(_ title: String) {
-        label.text = title
+    func setTitleCategory(_ title: String) {
+        categoryLabel.text = title
     }
 }
 
 private extension CurrentCategoryButton {
     
     func addViews() {
-        addSubview(label)
+        addSubview(titleCategoryLabel)
+        addSubview(categoryLabel)
         addSubview(iconView)
     }
     
@@ -44,10 +46,17 @@ private extension CurrentCategoryButton {
             make.width.equalTo(20)
         }
         
-        label.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+        titleCategoryLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(7)
             make.right.equalTo(iconView.snp.left)
             make.left.equalToSuperview().offset(10)
+        }
+        
+        categoryLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleCategoryLabel.snp.bottom).offset(5)
+            make.right.left.equalTo(titleCategoryLabel)
+            make.bottom.equalToSuperview().offset(-7)
+            
         }
     }
     
@@ -60,12 +69,19 @@ private extension CurrentCategoryButton {
         makeSystem(self)
         
         
-        label.textColor = Resources.Colors.activ
-        label.textAlignment = .center
-        label.font = Resources.Fonts.helveticaRegular(with: 15)
+        titleCategoryLabel.textColor = Resources.Colors.activ
+        titleCategoryLabel.textAlignment = .left
+        titleCategoryLabel.font = Resources.Fonts.helveticaRegular(with: 15)
+        titleCategoryLabel.numberOfLines = 0
+        titleCategoryLabel.text = "Choosed Category:"
+        
+        categoryLabel.textColor = Resources.Colors.activ
+        categoryLabel.textAlignment = .left
+        categoryLabel.font = Resources.Fonts.helveticaRegular(with: 12)
+        categoryLabel.numberOfLines = 0
         
         
         iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = Resources.Colors.activ
+        iconView.tintColor = .black
     }
 }

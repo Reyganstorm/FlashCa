@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController, Routable {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        baseView.setTitleForCurrentCategoryButton("TESTING Now")
+        baseView.setTitleForCurrentCategoryButton("Test History")
     }
     
     override func viewWillLayoutSubviews() {

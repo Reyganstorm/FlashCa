@@ -41,7 +41,7 @@ final class WelcomeView: UIView {
 extension WelcomeView {
     
     func setTitleForCurrentCategoryButton(_ title: String) {
-        currentCategoryButton.setTitle(title)
+        currentCategoryButton.setTitleCategory(title)
     }
 }
 
@@ -75,7 +75,6 @@ private extension WelcomeView {
             make.top.equalTo(randomView.snp.bottom).offset(5)
             make.left.right.equalToSuperview()
             make.width.greaterThanOrEqualTo(130)
-            make.height.equalTo(40)
             make.bottom.equalToSuperview()
         }
     }
