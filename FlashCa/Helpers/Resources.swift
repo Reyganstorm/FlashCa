@@ -31,6 +31,7 @@ enum Resources {
         
         enum Common {
             static let downArrow = UIImage(systemName: "chevron.down")
+            static let settings = UIImage(named: "ic.settings")
         }
     }
 }

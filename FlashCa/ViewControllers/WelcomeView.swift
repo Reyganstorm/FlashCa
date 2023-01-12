@@ -10,22 +10,18 @@ import SnapKit
 
 final class WelcomeView: UIView {
     
-    private let welcomeView: WelcomeNavView = {
-        let view = WelcomeNavView()
-        
-        return view
-    }()
-    
     private let containerView = UIView()
     
     private let logoLabel: UILabel = {
         let label = UILabel()
-        label.text = "FlaskCa"
+        label.text = "FlashCa"
         label.font = Resources.Fonts.helveticaBold(with: 50)
         label.textColor = Resources.Colors.activ
         label.textAlignment = .center
         return label
     }()
+    
+    private let randomView = RandomFlashView()
     
     private let currentCategoryButton = CurrentCategoryButton()
     
@@ -43,9 +39,6 @@ final class WelcomeView: UIView {
 }
 
 extension WelcomeView {
-    func setTitleToWelcomeView(_ name: String) {
-        welcomeView.setTitle("Welcome, \(name)!")
-    }
     
     func setTitleForCurrentCategoryButton(_ title: String) {
         currentCategoryButton.setTitle(title)
@@ -54,17 +47,13 @@ extension WelcomeView {
 
 private extension WelcomeView {
     func addViews() {
-        addSubview(welcomeView)
         addSubview(containerView)
         containerView.addSubview(logoLabel)
+        containerView.addSubview(randomView)
         containerView.addSubview(currentCategoryButton)
     }
     
     func layoutViews() {
-        welcomeView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.left.right.equalToSuperview()
-        }
         
         containerView.snp.makeConstraints { make in
             make.center.equalToSuperview()
@@ -75,8 +64,15 @@ private extension WelcomeView {
             make.left.right.equalToSuperview()
         }
         
-        currentCategoryButton.snp.makeConstraints { make in
+        randomView.snp.makeConstraints { make in
             make.top.equalTo(logoLabel.snp.bottom).offset(5)
+            make.left.right.equalToSuperview()
+            make.width.greaterThanOrEqualTo(130)
+            make.height.equalTo(40)
+        }
+        
+        currentCategoryButton.snp.makeConstraints { make in
+            make.top.equalTo(randomView.snp.bottom).offset(5)
             make.left.right.equalToSuperview()
             make.width.greaterThanOrEqualTo(130)
             make.height.equalTo(40)
