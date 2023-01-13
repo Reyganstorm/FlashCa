@@ -11,7 +11,12 @@ final class CurrentCategoryButton: UIButton {
     
     private let titleCategoryLabel = UILabel()
     private let categoryLabel = UILabel()
-    private let iconView = UIImageView()
+    private let iconView: UIImageView = {
+        let image = UIImageView()
+        image.image = Resources.Images.Common.rightArrow
+        image.tintColor = .black
+        return image
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,8 +47,8 @@ private extension CurrentCategoryButton {
         iconView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.right.equalToSuperview().offset(-10)
-            make.height.equalTo(10)
-            make.width.equalTo(20)
+            make.height.equalTo(25)
+            make.width.equalTo(15)
         }
         
         titleCategoryLabel.snp.makeConstraints { make in
@@ -77,11 +82,7 @@ private extension CurrentCategoryButton {
         
         categoryLabel.textColor = Resources.Colors.activ
         categoryLabel.textAlignment = .left
-        categoryLabel.font = Resources.Fonts.helveticaRegular(with: 12)
+        categoryLabel.font = Resources.Fonts.helveticaRegular(with: 13)
         categoryLabel.numberOfLines = 0
-        
-        
-        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = .black
     }
 }
