@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B12EF047926E0AF415AF61BE /* Pods_FlashCa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */; };
 		E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BA3D128FC86E90044BDD2 /* MainView.swift */; };
-		E8419E4A28FC69070069B2A4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4928FC69070069B2A4 /* TabBarController.swift */; };
 		E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4F28FC693B0069B2A4 /* SettingsController.swift */; };
 		E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B72968BD21005F7BCB /* SettingsView.swift */; };
 		E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */; };
@@ -34,7 +33,6 @@
 		882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.release.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.release.xcconfig"; sourceTree = "<group>"; };
 		E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.debug.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.debug.xcconfig"; sourceTree = "<group>"; };
 		E80BA3D128FC86E90044BDD2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		E8419E4928FC69070069B2A4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E8419E4F28FC693B0069B2A4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E84251B72968BD21005F7BCB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 				E88E6CCA296ABA5C007B86E1 /* Editing */,
 				E8E5BB832900968B0049A07A /* Settings */,
 				E80BA3D028FC86500044BDD2 /* Main */,
-				E8419E4928FC69070069B2A4 /* TabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -344,7 +341,6 @@
 				E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */,
 				E8F8B06328F35A980038F702 /* MainController.swift in Sources */,
 				E8F5E007296D6A7400AAE3D0 /* WelcomeViewController.swift in Sources */,
-				E8419E4A28FC69070069B2A4 /* TabBarController.swift in Sources */,
 				E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */,
 				E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */,
 				E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */,
