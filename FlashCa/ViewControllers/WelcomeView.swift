@@ -62,6 +62,10 @@ extension WelcomeView {
     func setTitleForCurrentCategoryButton(_ title: String) {
         currentCategoryButton.setTitleCategory(title)
     }
+    
+    func setTargetForCategoriesButton(target: Any, action: Selector) {
+        currentCategoryButton.addTarget(target, action: action, for: .touchUpInside)
+    }
 }
 
 private extension WelcomeView {

@@ -23,11 +23,6 @@ class MainRouter: NSObject {
     
     // MARK: - PUSH ViewController
     
-    func pushTabBar() {
-        let vc = TabBarController()
-        pushViewController(vc: vc, animated: true)
-    }
-    
     func pushWelcomeVC() {
         let vc = WelcomeViewController()
         pushViewController(vc: vc, animated: true)

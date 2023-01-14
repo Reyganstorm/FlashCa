@@ -13,8 +13,11 @@
 		E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B72968BD21005F7BCB /* SettingsView.swift */; };
 		E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */; };
 		E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */; };
+		E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE36297339920060AA95 /* CategoriesView.swift */; };
+		E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */; };
+		E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */; };
 		E84C1415296C742D0088EE43 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C1414296C742D0088EE43 /* Resources.swift */; };
-		E88E6CCC296ABADD007B86E1 /* EditingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* EditingController.swift */; };
+		E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */; };
 		E8F032AD296D6B950013E895 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AC296D6B950013E895 /* WelcomeView.swift */; };
 		E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */; };
 		E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032B2296D702C0013E895 /* UIView + ext.swift */; };
@@ -37,8 +40,11 @@
 		E84251B72968BD21005F7BCB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
 		E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFlashView.swift; sourceTree = "<group>"; };
+		E84ACE36297339920060AA95 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		E84C1414296C742D0088EE43 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		E88E6CCB296ABADD007B86E1 /* EditingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingController.swift; sourceTree = "<group>"; };
+		E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
 		E8F032AC296D6B950013E895 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCategoryButton.swift; sourceTree = "<group>"; };
 		E8F032B2296D702C0013E895 /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
@@ -106,16 +112,19 @@
 		E88741CA295C605400AAC920 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		E88E6CCA296ABA5C007B86E1 /* Editing */ = {
+		E88E6CCA296ABA5C007B86E1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				E88E6CCB296ABADD007B86E1 /* EditingController.swift */,
+				E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */,
+				E84ACE36297339920060AA95 /* CategoriesView.swift */,
+				E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */,
 			);
-			path = Editing;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		E8E5BB832900968B0049A07A /* Settings */ = {
@@ -211,7 +220,7 @@
 				E8F032AE296D6C3C0013E895 /* Views */,
 				E8F5E006296D6A7400AAE3D0 /* WelcomeViewController.swift */,
 				E8F032AC296D6B950013E895 /* WelcomeView.swift */,
-				E88E6CCA296ABA5C007B86E1 /* Editing */,
+				E88E6CCA296ABA5C007B86E1 /* Categories */,
 				E8E5BB832900968B0049A07A /* Settings */,
 				E80BA3D028FC86500044BDD2 /* Main */,
 			);
@@ -333,9 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F8B07828F35C3D0038F702 /* MainRouter.swift in Sources */,
-				E88E6CCC296ABADD007B86E1 /* EditingController.swift in Sources */,
+				E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */,
 				E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */,
 				E8F032AD296D6B950013E895 /* WelcomeView.swift in Sources */,
+				E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				E8F8B07628F35C250038F702 /* AppCoordinator.swift in Sources */,
 				E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */,
 				E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */,
@@ -345,7 +355,9 @@
 				E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */,
 				E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */,
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
+				E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */,
 				E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */,
+				E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */,
 				E84C1415296C742D0088EE43 /* Resources.swift in Sources */,
 				E8F5E005296D644500AAE3D0 /* WelcomeNavView.swift in Sources */,
 				E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */,
