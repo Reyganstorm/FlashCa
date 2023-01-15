@@ -29,8 +29,15 @@ class CategoriesView: UIView {
     
     private let collectionView: UICollectionView = {
         let layout = LeftAlignedCollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 13
+        layout.minimumLineSpacing = 10
+        layout.scrollDirection = .vertical
+        layout.estimatedItemSize = .init(width: 150, height: 40)
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.backgroundColor = .white
+        collection.contentInset.left = 20
+        collection.contentInset.right = 20
+        collection.contentInset.top = 20
         collection.register(CategoriesCollectionViewCell.self, forCellWithReuseIdentifier: CategoriesCollectionViewCell.identifier)
         collection.isScrollEnabled = false
         return collection
@@ -52,23 +59,23 @@ class CategoriesView: UIView {
 
 private extension CategoriesView {
     func addViews() {
-        addSubview(title)
         addSubview(addImage)
+        addSubview(title)
         addSubview(addButton)
         addSubview(collectionView)
     }
     
     func layoutViews() {
-        title.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(10)
-            make.left.equalToSuperview().offset(20)
-            make.right.equalTo(addButton.snp.left).offset(-10)
+        addImage.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(25)
+            make.right.equalToSuperview().offset(-25)
+            make.height.width.equalTo(30)
         }
         
-        addImage.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(15)
-            make.right.equalToSuperview().offset(-15)
-            make.height.width.equalTo(20)
+        title.snp.makeConstraints { make in
+            make.centerY.equalTo(addImage)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalTo(addButton.snp.left).offset(-10)
         }
         
         addButton.snp.makeConstraints { make in
@@ -83,5 +90,13 @@ private extension CategoriesView {
     
     func configure() {
         backgroundColor = .clear
+    }
+}
+
+extension CategoriesView {
+    // MARK: - CollectionView
+    func setDelegateToCollection(dataSourse: UICollectionViewDataSource, delegate: UICollectionViewDelegate) {
+        collectionView.dataSource = dataSourse
+        collectionView.delegate = delegate
     }
 }

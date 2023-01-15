@@ -41,8 +41,6 @@ private extension WelcomeViewController {
         } else {
             vc.modalPresentationStyle = .pageSheet
         }
-        
         present(vc, animated: true, completion: nil)
-
     }
 }

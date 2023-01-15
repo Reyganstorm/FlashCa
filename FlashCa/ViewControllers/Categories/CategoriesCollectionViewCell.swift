@@ -22,13 +22,15 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.cornerRadius = 5
+        view.layer.borderWidth  = 2
+        view.layer.borderColor = UIColor.black.cgColor
         return view
     }()
     
     override var isSelected: Bool {
         didSet {
             titleLabel.textColor = isSelected ? .white : UIColor(red: 0.243, green: 0.255, blue: 0.333, alpha: 1)
-            containerView.backgroundColor = isSelected ? .blue : .white
+            containerView.backgroundColor = isSelected ? .black : .white
         }
     }
     
@@ -61,6 +63,8 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
         
         titleLabel.snp.makeConstraints { make in
             make.center.equalToSuperview()
+            make.left.equalToSuperview().offset(13)
+            make.top.equalToSuperview().offset(10)
         }
         
     }
