@@ -21,11 +21,19 @@ class CategoriesView: UIView {
 
     private let addImage: UIImageView = {
         let image = UIImageView()
-        image.image = Resources.Images.Common.settings
+        image.image = Resources.Images.Common.add
         return image
     }()
     
     private let addButton = UIButton()
+    
+    private let editImage: UIImageView = {
+        let image = UIImageView()
+        image.image = Resources.Images.Common.edit
+        return image
+    }()
+    
+    private let editButton = UIButton()
     
     private let collectionView: UICollectionView = {
         let layout = LeftAlignedCollectionViewFlowLayout()
@@ -60,8 +68,10 @@ class CategoriesView: UIView {
 private extension CategoriesView {
     func addViews() {
         addSubview(addImage)
+        addSubview(editImage)
         addSubview(title)
         addSubview(addButton)
+        addSubview(editButton)
         addSubview(collectionView)
     }
     
@@ -72,14 +82,24 @@ private extension CategoriesView {
             make.height.width.equalTo(30)
         }
         
+        editImage.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(25)
+            make.right.equalTo(addImage.snp.left).offset(-10)
+            make.height.width.equalTo(30)
+        }
+        
         title.snp.makeConstraints { make in
             make.centerY.equalTo(addImage)
             make.left.equalToSuperview().offset(20)
-            make.right.equalTo(addButton.snp.left).offset(-10)
+            make.right.equalTo(editButton.snp.left).offset(-10)
         }
         
         addButton.snp.makeConstraints { make in
             make.edges.equalTo(addImage)
+        }
+        
+        editButton.snp.makeConstraints { make in
+            make.edges.equalTo(editImage)
         }
         
         collectionView.snp.makeConstraints { make in

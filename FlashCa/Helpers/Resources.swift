@@ -33,6 +33,8 @@ enum Resources {
             static let rightArrow = UIImage(systemName: "chevron.compact.right")
             static let downArrow = UIImage(systemName: "chevron.down")
             static let settings = UIImage(named: "ic.settings")
+            static let add = UIImage(systemName: "plus.square")
+            static let edit = UIImage(systemName: "square.and.pencil")
         }
     }
 }
