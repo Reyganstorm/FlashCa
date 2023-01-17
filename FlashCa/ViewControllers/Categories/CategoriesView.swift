@@ -27,13 +27,22 @@ class CategoriesView: UIView {
     
     private let addButton = UIButton()
     
-    private let editImage: UIImageView = {
-        let image = UIImageView()
-        image.image = Resources.Images.Common.edit
-        return image
-    }()
+//    private let editImage: UIImageView = {
+//        let image = UIImageView()
+//        image.image = Resources.Images.Common.edit
+//        return image
+//    }()
     
-    private let editButton = UIButton()
+    private let editButton: UIButton = {
+//        let buttonConfig = UIButton.Configuration
+//        buttonConfig.
+        let button = UIButton()
+        button.setImage(Resources.Images.Common.edit, for: .normal)
+        button.imageView?.tintColor = .black
+        button.imageView?.contentMode = .scaleAspectFit
+        button.backgroundColor = .gray
+        return button
+    }()
     
     private let collectionView: UICollectionView = {
         let layout = LeftAlignedCollectionViewFlowLayout()
@@ -68,7 +77,7 @@ class CategoriesView: UIView {
 private extension CategoriesView {
     func addViews() {
         addSubview(addImage)
-        addSubview(editImage)
+//        addSubview(editImage)
         addSubview(title)
         addSubview(addButton)
         addSubview(editButton)
@@ -79,12 +88,6 @@ private extension CategoriesView {
         addImage.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(25)
             make.right.equalToSuperview().offset(-25)
-            make.height.width.equalTo(30)
-        }
-        
-        editImage.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(25)
-            make.right.equalTo(addImage.snp.left).offset(-10)
             make.height.width.equalTo(30)
         }
         
@@ -99,7 +102,9 @@ private extension CategoriesView {
         }
         
         editButton.snp.makeConstraints { make in
-            make.edges.equalTo(editImage)
+            make.top.equalToSuperview().offset(25)
+            make.right.equalTo(addImage.snp.left).offset(-10)
+            make.size.equalTo(CGSize(width: 30, height: 30))
         }
         
         collectionView.snp.makeConstraints { make in
