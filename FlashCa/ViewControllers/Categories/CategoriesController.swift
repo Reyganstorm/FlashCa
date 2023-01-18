@@ -19,12 +19,22 @@ final class CategoriesController: UIViewController, Routable {
         super.viewDidLoad()
         view.backgroundColor = .white
         baseView.setDelegateToCollection(dataSourse: self, delegate: self)
+        baseView.addTargetToAddButton(target: self, action: #selector(addButtonDidTap))
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         view.addSubview(baseView)
         baseView.frame = view.bounds
+    }
+}
+
+@objc private extension CategoriesController {
+    func addButtonDidTap() {
+        let alert = UIAlertController(title: "Экран еще не готов", message: nil, preferredStyle: .actionSheet)
+        let destrAction = UIAlertAction(title: "Ок", style: .cancel)
+        alert.addAction(destrAction)
+        present(alert, animated: true)
     }
 }
 

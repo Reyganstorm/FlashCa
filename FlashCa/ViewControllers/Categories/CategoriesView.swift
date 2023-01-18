@@ -15,32 +15,21 @@ class CategoriesView: UIView {
         label.text = "Categories:"
         label.textColor = .black
         label.numberOfLines = 0
-        label.font = Resources.Fonts.helveticaBold(with: 20)
+        label.font = Resources.Fonts.helveticaBold(with: 30)
         return label
     }()
-
-    private let addImage: UIImageView = {
-        let image = UIImageView()
-        image.image = Resources.Images.Common.add
-        return image
+    
+    private let addButton: ImageButton = {
+        let button = ImageButton()
+        button.setImage(Resources.Images.Common.add)
+        button.setImageColor(.black)
+        return button
     }()
     
-    private let addButton = UIButton()
-    
-//    private let editImage: UIImageView = {
-//        let image = UIImageView()
-//        image.image = Resources.Images.Common.edit
-//        return image
-//    }()
-    
-    private let editButton: UIButton = {
-//        let buttonConfig = UIButton.Configuration
-//        buttonConfig.
-        let button = UIButton()
-        button.setImage(Resources.Images.Common.edit, for: .normal)
-        button.imageView?.tintColor = .black
-        button.imageView?.contentMode = .scaleAspectFit
-        button.backgroundColor = .gray
+    private let editButton: ImageButton = {
+        let button = ImageButton()
+        button.setImage(Resources.Images.Common.edit)
+        button.setImageColor(.black)
         return button
     }()
     
@@ -71,13 +60,20 @@ class CategoriesView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+extension CategoriesView {
+    func addTargetToAddButton(target: Any, action: Selector) {
+        addButton.addTarget(target, action: action, for: .touchUpInside)
+    }
     
+    func addTargetToEditButton(target: Any, action: Selector) {
+        editButton.addTarget(target, action: action, for: .touchUpInside)
+    }
 }
 
 private extension CategoriesView {
     func addViews() {
-        addSubview(addImage)
-//        addSubview(editImage)
         addSubview(title)
         addSubview(addButton)
         addSubview(editButton)
@@ -85,26 +81,23 @@ private extension CategoriesView {
     }
     
     func layoutViews() {
-        addImage.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(25)
-            make.right.equalToSuperview().offset(-25)
-            make.height.width.equalTo(30)
-        }
         
         title.snp.makeConstraints { make in
-            make.centerY.equalTo(addImage)
+            make.centerY.equalTo(addButton)
             make.left.equalToSuperview().offset(20)
             make.right.equalTo(editButton.snp.left).offset(-10)
         }
         
         addButton.snp.makeConstraints { make in
-            make.edges.equalTo(addImage)
+            make.top.equalToSuperview().offset(25)
+            make.right.equalToSuperview().offset(-25)
+            make.height.width.equalTo(50)
         }
         
         editButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(25)
-            make.right.equalTo(addImage.snp.left).offset(-10)
-            make.size.equalTo(CGSize(width: 30, height: 30))
+            make.centerY.equalTo(addButton)
+            make.right.equalTo(addButton.snp.left).offset(-10)
+            make.size.equalTo(addButton)
         }
         
         collectionView.snp.makeConstraints { make in
