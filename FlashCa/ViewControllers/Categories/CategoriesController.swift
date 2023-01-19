@@ -11,7 +11,7 @@ final class CategoriesController: UIViewController, Routable {
     
     var router: MainRouter?
     
-    private let stabs = ["History", "Life cycles", "Async Await", "Lowe", "American Literature"]
+    private let stabs = ["History", "Life cycles", "Async Await", "Love", "American Literature"]
     
     private let baseView: CategoriesView = CategoriesView()
     

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B12EF047926E0AF415AF61BE /* Pods_FlashCa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */; };
 		E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BA3D128FC86E90044BDD2 /* MainView.swift */; };
+		E816C65F2979466A002F3D62 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C65E2979466A002F3D62 /* StorageManager.swift */; };
+		E816C662297946D7002F3D62 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C661297946D7002F3D62 /* Category.swift */; };
+		E816C664297946E4002F3D62 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C663297946E4002F3D62 /* Card.swift */; };
 		E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4F28FC693B0069B2A4 /* SettingsController.swift */; };
 		E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B72968BD21005F7BCB /* SettingsView.swift */; };
 		E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */; };
@@ -37,6 +40,9 @@
 		882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.release.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.release.xcconfig"; sourceTree = "<group>"; };
 		E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.debug.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.debug.xcconfig"; sourceTree = "<group>"; };
 		E80BA3D128FC86E90044BDD2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E816C65E2979466A002F3D62 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		E816C661297946D7002F3D62 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E816C663297946E4002F3D62 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E8419E4F28FC693B0069B2A4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E84251B72968BD21005F7BCB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
@@ -103,6 +109,15 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		E816C660297946BF002F3D62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E816C661297946D7002F3D62 /* Category.swift */,
+				E816C663297946E4002F3D62 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E88741C9295C603D00AAC920 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E84C1414296C742D0088EE43 /* Resources.swift */,
+				E816C65E2979466A002F3D62 /* StorageManager.swift */,
 				E88741C9295C603D00AAC920 /* Extension */,
 			);
 			path = Helpers;
@@ -187,6 +203,7 @@
 		E8F8B05D28F35A980038F702 /* FlashCa */ = {
 			isa = PBXGroup;
 			children = (
+				E816C660297946BF002F3D62 /* Models */,
 				E8F032B1296D70080013E895 /* Helpers */,
 				E88741CA295C605400AAC920 /* Components */,
 				E8F8B07228F35ADF0038F702 /* Application */,
@@ -351,12 +368,15 @@
 				E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */,
 				E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				E8F8B07628F35C250038F702 /* AppCoordinator.swift in Sources */,
+				E816C664297946E4002F3D62 /* Card.swift in Sources */,
 				E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */,
 				E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */,
 				E8F8B06328F35A980038F702 /* MainController.swift in Sources */,
 				E8F5E007296D6A7400AAE3D0 /* WelcomeViewController.swift in Sources */,
 				E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */,
 				E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */,
+				E816C65F2979466A002F3D62 /* StorageManager.swift in Sources */,
+				E816C662297946D7002F3D62 /* Category.swift in Sources */,
 				E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */,
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
 				E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */,
