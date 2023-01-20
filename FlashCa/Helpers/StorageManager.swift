@@ -16,27 +16,27 @@ class StorageManager {
     
     private init() {}
     
-    // MARK: - Cate
+    // MARK: - Category
     
-//    // MARK: - TaskList
-//    func save(_ taskLists: [TaskList]) {
-//        write {
-//            localRealm.add(taskLists)
-//        }
-//    }
-//
-//    func save(_ taskList: TaskList) {
-//        write {
-//            localRealm.add(taskList)
-//        }
-//    }
+    func save(_ categories: [Category]) {
+        write {
+            localRealm.add(categories)
+        }
+    }
     
-//    // MARK: - Tasks
-//    func save(_ task: Task, to taskList: TaskList ) {
-//        write {
-//            taskList.tasks.append(task)
-//        }
-//    }
+    func save(_ category: Category) {
+        write {
+            localRealm.add(category)
+        }
+    }
+    
+    // MARK: - Card
+    
+    func save(_ card: Card, to category: Category) {
+        write {
+            category.cards.append(card)
+        }
+    }
 //    
 //    // MARK: - Delete
 //    
