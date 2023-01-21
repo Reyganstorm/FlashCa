@@ -37,23 +37,26 @@ class StorageManager {
             category.cards.append(card)
         }
     }
-//    
-//    // MARK: - Delete
-//    
-//    func delete(_ taskList: TaskList) {
-//        write {
-//            localRealm.delete(taskList.tasks)
-//            localRealm.delete(taskList)
-//        }
-//    }
-//    
-//    func delete(_ task: Task) {
-//        write {
-//            localRealm.delete(task)
-//        }
-//    }
-//    
-//    // MARK: - Edit
+    
+    // MARK: - Delete
+    
+    func delete(_ category: Category) {
+        write {
+            localRealm.delete(category.cards)
+            localRealm.delete(category)
+        }
+    }
+    
+    func delete(_ card: Card) {
+        write {
+            localRealm.delete(card)
+        }
+    }
+
+    
+    // MARK: - Edit
+    
+    
 //    func edit(_ taskList: TaskList, newValue: String) {
 //        write {
 //            taskList.name = newValue
