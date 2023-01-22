@@ -56,19 +56,19 @@ class StorageManager {
     
     // MARK: - Edit
     
+    func edit(_ category: Category, newValue: String) {
+        write {
+            category.name = newValue
+        }
+    }
     
-//    func edit(_ taskList: TaskList, newValue: String) {
-//        write {
-//            taskList.name = newValue
-//        }
-//    }
-//    
-//    func edit(_ task: Task, to newName: String, with newNote: String) {
-//        write {
-//            task.name = newName
-//            task.note = newNote
-//        }
-//    }
+    func edit(_ card: Card, newCard: Card) {
+        write {
+            card.name = newCard.name
+            card.date = Date()
+            card.note = newCard.note
+        }
+    }
     
 //    // MARK: - Done
 //    func done(_ taskList: TaskList) {
