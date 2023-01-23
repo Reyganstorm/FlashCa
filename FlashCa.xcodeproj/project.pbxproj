@@ -20,6 +20,8 @@
 		E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */; };
 		E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */; };
 		E84C1415296C742D0088EE43 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C1414296C742D0088EE43 /* Resources.swift */; };
+		E85CC9B6297F1AFA00C774D5 /* SoloCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CC9B5297F1AFA00C774D5 /* SoloCategoryController.swift */; };
+		E85CC9B8297F1B0A00C774D5 /* SoloCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */; };
 		E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8849CDD2977EE5200CC414B /* ImageButton.swift */; };
 		E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */; };
 		E8F032AD296D6B950013E895 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AC296D6B950013E895 /* WelcomeView.swift */; };
@@ -51,6 +53,8 @@
 		E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		E84C1414296C742D0088EE43 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		E85CC9B5297F1AFA00C774D5 /* SoloCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCategoryController.swift; sourceTree = "<group>"; };
+		E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCategoryView.swift; sourceTree = "<group>"; };
 		E8849CDD2977EE5200CC414B /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
 		E8F032AC296D6B950013E895 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -116,6 +120,15 @@
 				E816C663297946E4002F3D62 /* Card.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E85CC9B4297F1ACE00C774D5 /* SoloCategory */ = {
+			isa = PBXGroup;
+			children = (
+				E85CC9B5297F1AFA00C774D5 /* SoloCategoryController.swift */,
+				E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */,
+			);
+			path = SoloCategory;
 			sourceTree = "<group>";
 		};
 		E88741C9295C603D00AAC920 /* Extension */ = {
@@ -237,6 +250,7 @@
 		E8F8B07428F35B440038F702 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E85CC9B4297F1ACE00C774D5 /* SoloCategory */,
 				E8F032AE296D6C3C0013E895 /* Views */,
 				E8F5E006296D6A7400AAE3D0 /* WelcomeViewController.swift */,
 				E8F032AC296D6B950013E895 /* WelcomeView.swift */,
@@ -368,8 +382,10 @@
 				E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */,
 				E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				E8F8B07628F35C250038F702 /* AppCoordinator.swift in Sources */,
+				E85CC9B8297F1B0A00C774D5 /* SoloCategoryView.swift in Sources */,
 				E816C664297946E4002F3D62 /* Card.swift in Sources */,
 				E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */,
+				E85CC9B6297F1AFA00C774D5 /* SoloCategoryController.swift in Sources */,
 				E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */,
 				E8F8B06328F35A980038F702 /* MainController.swift in Sources */,
 				E8F5E007296D6A7400AAE3D0 /* WelcomeViewController.swift in Sources */,
