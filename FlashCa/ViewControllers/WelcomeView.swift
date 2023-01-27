@@ -91,7 +91,6 @@ private extension WelcomeView {
             make.top.equalTo(logoLabel.snp.bottom).offset(5)
             make.left.right.equalToSuperview()
             make.width.greaterThanOrEqualTo(130)
-//            make.bottom.equalToSuperview()
         }
         
         startButton.snp.makeConstraints { make in
