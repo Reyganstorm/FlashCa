@@ -12,6 +12,8 @@
 		E816C65F2979466A002F3D62 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C65E2979466A002F3D62 /* StorageManager.swift */; };
 		E816C662297946D7002F3D62 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C661297946D7002F3D62 /* Category.swift */; };
 		E816C664297946E4002F3D62 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C663297946E4002F3D62 /* Card.swift */; };
+		E83360472986F04E00D85575 /* StabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83360462986F04E00D85575 /* StabManager.swift */; };
+		E83360492986F17400D85575 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83360482986F17400D85575 /* UserDefaultsService.swift */; };
 		E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4F28FC693B0069B2A4 /* SettingsController.swift */; };
 		E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B72968BD21005F7BCB /* SettingsView.swift */; };
 		E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */; };
@@ -45,6 +47,8 @@
 		E816C65E2979466A002F3D62 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		E816C661297946D7002F3D62 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E816C663297946E4002F3D62 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E83360462986F04E00D85575 /* StabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabManager.swift; sourceTree = "<group>"; };
+		E83360482986F17400D85575 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		E8419E4F28FC693B0069B2A4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E84251B72968BD21005F7BCB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVCell.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 			children = (
 				E84C1414296C742D0088EE43 /* Resources.swift */,
 				E816C65E2979466A002F3D62 /* StorageManager.swift */,
+				E83360462986F04E00D85575 /* StabManager.swift */,
+				E83360482986F17400D85575 /* UserDefaultsService.swift */,
 				E88741C9295C603D00AAC920 /* Extension */,
 			);
 			path = Helpers;
@@ -383,6 +389,7 @@
 				E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				E8F8B07628F35C250038F702 /* AppCoordinator.swift in Sources */,
 				E85CC9B8297F1B0A00C774D5 /* SoloCategoryView.swift in Sources */,
+				E83360492986F17400D85575 /* UserDefaultsService.swift in Sources */,
 				E816C664297946E4002F3D62 /* Card.swift in Sources */,
 				E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */,
 				E85CC9B6297F1AFA00C774D5 /* SoloCategoryController.swift in Sources */,
@@ -396,6 +403,7 @@
 				E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */,
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
 				E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */,
+				E83360472986F04E00D85575 /* StabManager.swift in Sources */,
 				E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */,
 				E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */,
 				E84C1415296C742D0088EE43 /* Resources.swift in Sources */,
