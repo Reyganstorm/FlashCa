@@ -9,6 +9,15 @@ import UIKit
 
 class SoloCategoryView: UIView {
     
+    private let title: UILabel = {
+        let label = UILabel()
+        label.text = "Categories:"
+        label.textColor = .black
+        label.numberOfLines = 0
+        label.font = Resources.Fonts.helveticaBold(with: 30)
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         

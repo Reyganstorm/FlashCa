@@ -13,4 +13,5 @@ class Category: Object {
     @Persisted var name = ""
     @Persisted var date = Date()
     @Persisted var cards = List<Card>()
+    
 }
