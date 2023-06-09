@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B12EF047926E0AF415AF61BE /* Pods_FlashCa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */; };
 		E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BA3D128FC86E90044BDD2 /* MainView.swift */; };
 		E816C65F2979466A002F3D62 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C65E2979466A002F3D62 /* StorageManager.swift */; };
 		E816C662297946D7002F3D62 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C661297946D7002F3D62 /* Category.swift */; };
@@ -26,6 +25,7 @@
 		E85CC9B8297F1B0A00C774D5 /* SoloCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */; };
 		E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8849CDD2977EE5200CC414B /* ImageButton.swift */; };
 		E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */; };
+		E891D04D2A33C0C3007C3189 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E891D04C2A33C0C3007C3189 /* SnapKit */; };
 		E8F032AD296D6B950013E895 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AC296D6B950013E895 /* WelcomeView.swift */; };
 		E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */; };
 		E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032B2296D702C0013E895 /* UIView + ext.swift */; };
@@ -41,8 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.release.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.release.xcconfig"; sourceTree = "<group>"; };
-		E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCa.debug.xcconfig"; path = "Target Support Files/Pods-FlashCa/Pods-FlashCa.debug.xcconfig"; sourceTree = "<group>"; };
 		E80BA3D128FC86E90044BDD2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E816C65E2979466A002F3D62 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		E816C661297946D7002F3D62 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 		E8F8B06C28F35A990038F702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8F8B07528F35C250038F702 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E8F8B07728F35C3D0038F702 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,30 +80,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12EF047926E0AF415AF61BE /* Pods_FlashCa.framework in Frameworks */,
+				E891D04D2A33C0C3007C3189 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6DCAD8087BB333531F343071 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */,
-				882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		BFC28B840C614D513EE0185F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FE890BFF8224A7837BB7FF13 /* Pods_FlashCa.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E80BA3D028FC86500044BDD2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,8 +186,6 @@
 			children = (
 				E8F8B05D28F35A980038F702 /* FlashCa */,
 				E8F8B05C28F35A980038F702 /* Products */,
-				6DCAD8087BB333531F343071 /* Pods */,
-				BFC28B840C614D513EE0185F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,17 +252,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8F8B06F28F35A990038F702 /* Build configuration list for PBXNativeTarget "FlashCa" */;
 			buildPhases = (
-				251956A7C21E08DCC812FA12 /* [CP] Check Pods Manifest.lock */,
 				E8F8B05728F35A980038F702 /* Sources */,
 				E8F8B05828F35A980038F702 /* Frameworks */,
 				E8F8B05928F35A980038F702 /* Resources */,
-				B42353810FA5C7C9CC12C858 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FlashCa;
+			packageProductDependencies = (
+				E891D04C2A33C0C3007C3189 /* SnapKit */,
+			);
 			productName = FlashCa;
 			productReference = E8F8B05B28F35A980038F702 /* FlashCa.app */;
 			productType = "com.apple.product-type.application";
@@ -313,6 +292,9 @@
 				Base,
 			);
 			mainGroup = E8F8B05228F35A980038F702;
+			packageReferences = (
+				E891D04B2A33C0C3007C3189 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E8F8B05C28F35A980038F702 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,48 +315,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		251956A7C21E08DCC812FA12 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FlashCa-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B42353810FA5C7C9CC12C858 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlashCa/Pods-FlashCa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlashCa/Pods-FlashCa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashCa/Pods-FlashCa-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8F8B05728F35A980038F702 /* Sources */ = {
@@ -542,7 +482,6 @@
 		};
 		E8F8B07028F35A990038F702 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E005C231DAACD68264C6D922 /* Pods-FlashCa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -570,7 +509,6 @@
 		};
 		E8F8B07128F35A990038F702 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 882C3EEEB65730EF32226B58 /* Pods-FlashCa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -618,6 +556,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E891D04B2A33C0C3007C3189 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E891D04C2A33C0C3007C3189 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E891D04B2A33C0C3007C3189 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8F8B05328F35A980038F702 /* Project object */;
 }
