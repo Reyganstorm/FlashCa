@@ -13,6 +13,8 @@
 		E816C664297946E4002F3D62 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C663297946E4002F3D62 /* Card.swift */; };
 		E83360472986F04E00D85575 /* StabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83360462986F04E00D85575 /* StabManager.swift */; };
 		E83360492986F17400D85575 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83360482986F17400D85575 /* UserDefaultsService.swift */; };
+		E8404CA52A33C6A300322CAE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E8404CA42A33C6A300322CAE /* Realm */; };
+		E8404CA72A33C6A300322CAE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E8404CA62A33C6A300322CAE /* RealmSwift */; };
 		E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8419E4F28FC693B0069B2A4 /* SettingsController.swift */; };
 		E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B72968BD21005F7BCB /* SettingsView.swift */; };
 		E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84251B92968BDDB005F7BCB /* SettingsTVCell.swift */; };
@@ -80,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8404CA72A33C6A300322CAE /* RealmSwift in Frameworks */,
+				E8404CA52A33C6A300322CAE /* Realm in Frameworks */,
 				E891D04D2A33C0C3007C3189 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +267,8 @@
 			name = FlashCa;
 			packageProductDependencies = (
 				E891D04C2A33C0C3007C3189 /* SnapKit */,
+				E8404CA42A33C6A300322CAE /* Realm */,
+				E8404CA62A33C6A300322CAE /* RealmSwift */,
 			);
 			productName = FlashCa;
 			productReference = E8F8B05B28F35A980038F702 /* FlashCa.app */;
@@ -294,6 +300,7 @@
 			mainGroup = E8F8B05228F35A980038F702;
 			packageReferences = (
 				E891D04B2A33C0C3007C3189 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E8404CA32A33C6A300322CAE /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = E8F8B05C28F35A980038F702 /* Products */;
 			projectDirPath = "";
@@ -558,6 +565,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E8404CA32A33C6A300322CAE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		E891D04B2A33C0C3007C3189 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -569,6 +584,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E8404CA42A33C6A300322CAE /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8404CA32A33C6A300322CAE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		E8404CA62A33C6A300322CAE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8404CA32A33C6A300322CAE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		E891D04C2A33C0C3007C3189 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E891D04B2A33C0C3007C3189 /* XCRemoteSwiftPackageReference "SnapKit" */;
