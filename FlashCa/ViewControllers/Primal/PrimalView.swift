@@ -80,6 +80,7 @@ private extension PrimalView {
         
         containerView.snp.makeConstraints { make in
             make.center.equalToSuperview()
+            make.left.greaterThanOrEqualToSuperview().offset(30)
         }
         
         logoLabel.snp.makeConstraints { make in

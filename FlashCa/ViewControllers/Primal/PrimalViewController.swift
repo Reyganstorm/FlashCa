@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol PrimalCategoryDelegete {
+    func setSelectCategory(category: String)
+}
+
 class PrimalViewController: UIViewController, Routable {
     
     var router: MainRouter?
@@ -31,9 +35,16 @@ class PrimalViewController: UIViewController, Routable {
     }
 }
 
+extension PrimalViewController: PrimalCategoryDelegete {
+    func setSelectCategory(category: String) {
+        baseView.setTitleForCurrentCategoryButton(category)
+    }
+}
+
 private extension PrimalViewController {
     func presentCategories() {
         let vc = CategoriesController()
+        vc.delegate = self
         vc.router = router
         if #available(iOS 15.0, *) {
             if let sheet = vc.sheetPresentationController {

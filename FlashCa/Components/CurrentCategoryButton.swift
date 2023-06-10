@@ -53,8 +53,8 @@ private extension CurrentCategoryButton {
         
         titleCategoryLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(7)
-            make.right.equalTo(iconView.snp.left)
-            make.left.equalToSuperview().offset(10)
+            make.right.lessThanOrEqualTo(iconView.snp.left).offset(-6)
+            make.centerX.equalToSuperview()
         }
         
         categoryLabel.snp.makeConstraints { make in

@@ -10,6 +10,7 @@ import UIKit
 final class CategoriesController: UIViewController, Routable {
     
     var router: MainRouter?
+    var delegate: PrimalCategoryDelegete?
     
     private let stabs = ["History", "Life cycles", "Async Await", "Love", "American Literature"]
     
@@ -48,6 +49,12 @@ extension CategoriesController: UICollectionViewDataSource, UICollectionViewDele
         let stab = stabs[indexPath.item]
         cell.setupCell(title: stab)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = stabs[indexPath.item]
+        delegate?.setSelectCategory(category: item)
+        dismiss(animated: true)
     }
 }
 
