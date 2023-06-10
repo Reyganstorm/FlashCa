@@ -68,7 +68,7 @@ private extension CurrentCategoryButton {
     func configure() {
         backgroundColor = .white
         layer.cornerRadius = 14
-        layer.borderColor = Resources.Colors.activ?.cgColor
+        layer.borderColor = Resources.Colors.activ.cgColor
         layer.borderWidth = 1
         layer.masksToBounds = false
         makeSystem(self)

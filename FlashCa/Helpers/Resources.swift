@@ -9,12 +9,12 @@ import UIKit
 
 enum Resources {
     enum Colors {
-        static let background = UIColor(named: "mainLight")
-        static let main = UIColor(named: "mainMedium")
-        static let mainDark = UIColor(named: "mainDark")
+        static let background = UIColor.white
+        static let main = UIColor.blue
+        static let mainDark = UIColor.darkGray
         
-        static let activ = UIColor(named: "mainPink")
-        static let inActiv = UIColor(named: "mainPinkLight")
+        static let activ = UIColor.black
+        static let inActiv = UIColor.gray
     }
     
     enum Fonts {

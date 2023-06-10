@@ -16,7 +16,7 @@ class SettingsTVCell: UITableViewCell {
         view.backgroundColor = Resources.Colors.inActiv
         view.layer.cornerRadius = 10
         view.layer.borderWidth = 2
-        view.layer.borderColor = Resources.Colors.mainDark?.cgColor
+        view.layer.borderColor = Resources.Colors.mainDark.cgColor
         return view
     }()
     

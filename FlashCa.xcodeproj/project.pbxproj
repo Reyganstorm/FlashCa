@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BA3D128FC86E90044BDD2 /* MainView.swift */; };
 		E816C65F2979466A002F3D62 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C65E2979466A002F3D62 /* StorageManager.swift */; };
 		E816C662297946D7002F3D62 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C661297946D7002F3D62 /* Category.swift */; };
 		E816C664297946E4002F3D62 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816C663297946E4002F3D62 /* Card.swift */; };
@@ -31,11 +30,9 @@
 		E8F032AD296D6B950013E895 /* PrimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AC296D6B950013E895 /* PrimalView.swift */; };
 		E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */; };
 		E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032B2296D702C0013E895 /* UIView + ext.swift */; };
-		E8F5E005296D644500AAE3D0 /* WelcomeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E004296D644500AAE3D0 /* WelcomeNavView.swift */; };
 		E8F5E007296D6A7400AAE3D0 /* PrimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E006296D6A7400AAE3D0 /* PrimalViewController.swift */; };
 		E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B05E28F35A980038F702 /* AppDelegate.swift */; };
 		E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B06028F35A980038F702 /* SceneDelegate.swift */; };
-		E8F8B06328F35A980038F702 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B06228F35A980038F702 /* MainController.swift */; };
 		E8F8B06828F35A990038F702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F8B06728F35A990038F702 /* Assets.xcassets */; };
 		E8F8B06B28F35A990038F702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F8B06928F35A990038F702 /* LaunchScreen.storyboard */; };
 		E8F8B07628F35C250038F702 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B07528F35C250038F702 /* AppCoordinator.swift */; };
@@ -43,7 +40,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E80BA3D128FC86E90044BDD2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E816C65E2979466A002F3D62 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		E816C661297946D7002F3D62 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E816C663297946E4002F3D62 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -64,12 +60,10 @@
 		E8F032AC296D6B950013E895 /* PrimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimalView.swift; sourceTree = "<group>"; };
 		E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCategoryButton.swift; sourceTree = "<group>"; };
 		E8F032B2296D702C0013E895 /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
-		E8F5E004296D644500AAE3D0 /* WelcomeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavView.swift; sourceTree = "<group>"; };
 		E8F5E006296D6A7400AAE3D0 /* PrimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimalViewController.swift; sourceTree = "<group>"; };
 		E8F8B05B28F35A980038F702 /* FlashCa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F8B05E28F35A980038F702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F8B06028F35A980038F702 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8F8B06228F35A980038F702 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		E8F8B06728F35A990038F702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8F8B06A28F35A990038F702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8F8B06C28F35A990038F702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,16 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E80BA3D028FC86500044BDD2 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				E8F5E003296D643200AAE3D0 /* Views */,
-				E8F8B06228F35A980038F702 /* MainController.swift */,
-				E80BA3D128FC86E90044BDD2 /* MainView.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		E816C660297946BF002F3D62 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +114,8 @@
 		E88741CA295C605400AAC920 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */,
+				E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */,
 				E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */,
 				E8849CDD2977EE5200CC414B /* ImageButton.swift */,
 			);
@@ -165,15 +151,6 @@
 			path = Primal;
 			sourceTree = "<group>";
 		};
-		E8F032AE296D6C3C0013E895 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */,
-				E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		E8F032B1296D70080013E895 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,14 +161,6 @@
 				E88741C9295C603D00AAC920 /* Extension */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		E8F5E003296D643200AAE3D0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E8F5E004296D644500AAE3D0 /* WelcomeNavView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		E8F8B05228F35A980038F702 = {
@@ -249,10 +218,8 @@
 			children = (
 				E8EE99E82A350E1B00936051 /* Primal */,
 				E85CC9B4297F1ACE00C774D5 /* SoloCategory */,
-				E8F032AE296D6C3C0013E895 /* Views */,
 				E88E6CCA296ABA5C007B86E1 /* Categories */,
 				E8E5BB832900968B0049A07A /* Settings */,
-				E80BA3D028FC86500044BDD2 /* Main */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -346,10 +313,8 @@
 				E85CC9B8297F1B0A00C774D5 /* SoloCategoryView.swift in Sources */,
 				E83360492986F17400D85575 /* UserDefaultsService.swift in Sources */,
 				E816C664297946E4002F3D62 /* Card.swift in Sources */,
-				E80BA3D228FC86E90044BDD2 /* MainView.swift in Sources */,
 				E85CC9B6297F1AFA00C774D5 /* SoloCategoryController.swift in Sources */,
 				E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */,
-				E8F8B06328F35A980038F702 /* MainController.swift in Sources */,
 				E8F5E007296D6A7400AAE3D0 /* PrimalViewController.swift in Sources */,
 				E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */,
 				E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */,
@@ -362,7 +327,6 @@
 				E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */,
 				E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */,
 				E84C1415296C742D0088EE43 /* Resources.swift in Sources */,
-				E8F5E005296D644500AAE3D0 /* WelcomeNavView.swift in Sources */,
 				E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

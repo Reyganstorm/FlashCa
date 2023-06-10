@@ -8,9 +8,10 @@
 import UIKit
 
 class PrimalViewController: UIViewController, Routable {
+    
     var router: MainRouter?
     
-    let baseView: PrimalView = PrimalView()
+    private let baseView: PrimalView = PrimalView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
