@@ -6,6 +6,7 @@
 //
 
 import RealmSwift
+import Foundation
 
 class Card: Object {
     @Persisted var name = ""

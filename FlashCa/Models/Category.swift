@@ -6,6 +6,7 @@
 //
 
 import RealmSwift
+import Foundation
 
 // Object - это тип данных фреймворка Realm
 class Category: Object {
