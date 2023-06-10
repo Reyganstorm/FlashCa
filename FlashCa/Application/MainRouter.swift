@@ -23,8 +23,8 @@ class MainRouter: NSObject {
     
     // MARK: - PUSH ViewController
     
-    func pushWelcomeVC() {
-        let vc = WelcomeViewController()
+    func pushPrimalVC() {
+        let vc = PrimalViewController()
         pushViewController(vc: vc, animated: true)
     }
 

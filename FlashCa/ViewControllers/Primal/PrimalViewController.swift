@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.swift
+//  PrimalViewController.swift
 //  FlashCa
 //
 //  Created by Руслан Штыбаев on 10.01.2023.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController, Routable {
+class PrimalViewController: UIViewController, Routable {
     var router: MainRouter?
     
-    let baseView: WelcomeView = WelcomeView()
+    let baseView: PrimalView = PrimalView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class WelcomeViewController: UIViewController, Routable {
     }
 }
 
-private extension WelcomeViewController {
+private extension PrimalViewController {
     func presentCategories() {
         let vc = CategoriesController()
         vc.router = router

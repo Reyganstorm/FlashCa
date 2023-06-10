@@ -28,11 +28,11 @@
 		E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8849CDD2977EE5200CC414B /* ImageButton.swift */; };
 		E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */; };
 		E891D04D2A33C0C3007C3189 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E891D04C2A33C0C3007C3189 /* SnapKit */; };
-		E8F032AD296D6B950013E895 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AC296D6B950013E895 /* WelcomeView.swift */; };
+		E8F032AD296D6B950013E895 /* PrimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AC296D6B950013E895 /* PrimalView.swift */; };
 		E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */; };
 		E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032B2296D702C0013E895 /* UIView + ext.swift */; };
 		E8F5E005296D644500AAE3D0 /* WelcomeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E004296D644500AAE3D0 /* WelcomeNavView.swift */; };
-		E8F5E007296D6A7400AAE3D0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E006296D6A7400AAE3D0 /* WelcomeViewController.swift */; };
+		E8F5E007296D6A7400AAE3D0 /* PrimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5E006296D6A7400AAE3D0 /* PrimalViewController.swift */; };
 		E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B05E28F35A980038F702 /* AppDelegate.swift */; };
 		E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B06028F35A980038F702 /* SceneDelegate.swift */; };
 		E8F8B06328F35A980038F702 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B06228F35A980038F702 /* MainController.swift */; };
@@ -61,11 +61,11 @@
 		E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCategoryView.swift; sourceTree = "<group>"; };
 		E8849CDD2977EE5200CC414B /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
-		E8F032AC296D6B950013E895 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E8F032AC296D6B950013E895 /* PrimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimalView.swift; sourceTree = "<group>"; };
 		E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCategoryButton.swift; sourceTree = "<group>"; };
 		E8F032B2296D702C0013E895 /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
 		E8F5E004296D644500AAE3D0 /* WelcomeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavView.swift; sourceTree = "<group>"; };
-		E8F5E006296D6A7400AAE3D0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E8F5E006296D6A7400AAE3D0 /* PrimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimalViewController.swift; sourceTree = "<group>"; };
 		E8F8B05B28F35A980038F702 /* FlashCa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F8B05E28F35A980038F702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F8B06028F35A980038F702 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +156,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		E8EE99E82A350E1B00936051 /* Primal */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5E006296D6A7400AAE3D0 /* PrimalViewController.swift */,
+				E8F032AC296D6B950013E895 /* PrimalView.swift */,
+			);
+			path = Primal;
+			sourceTree = "<group>";
+		};
 		E8F032AE296D6C3C0013E895 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,10 +247,9 @@
 		E8F8B07428F35B440038F702 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E8EE99E82A350E1B00936051 /* Primal */,
 				E85CC9B4297F1ACE00C774D5 /* SoloCategory */,
 				E8F032AE296D6C3C0013E895 /* Views */,
-				E8F5E006296D6A7400AAE3D0 /* WelcomeViewController.swift */,
-				E8F032AC296D6B950013E895 /* WelcomeView.swift */,
 				E88E6CCA296ABA5C007B86E1 /* Categories */,
 				E8E5BB832900968B0049A07A /* Settings */,
 				E80BA3D028FC86500044BDD2 /* Main */,
@@ -331,7 +339,7 @@
 				E8F8B07828F35C3D0038F702 /* MainRouter.swift in Sources */,
 				E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */,
 				E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */,
-				E8F032AD296D6B950013E895 /* WelcomeView.swift in Sources */,
+				E8F032AD296D6B950013E895 /* PrimalView.swift in Sources */,
 				E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */,
 				E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				E8F8B07628F35C250038F702 /* AppCoordinator.swift in Sources */,
@@ -342,7 +350,7 @@
 				E85CC9B6297F1AFA00C774D5 /* SoloCategoryController.swift in Sources */,
 				E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */,
 				E8F8B06328F35A980038F702 /* MainController.swift in Sources */,
-				E8F5E007296D6A7400AAE3D0 /* WelcomeViewController.swift in Sources */,
+				E8F5E007296D6A7400AAE3D0 /* PrimalViewController.swift in Sources */,
 				E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */,
 				E8F8B06128F35A980038F702 /* SceneDelegate.swift in Sources */,
 				E816C65F2979466A002F3D62 /* StorageManager.swift in Sources */,

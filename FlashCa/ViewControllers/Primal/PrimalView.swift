@@ -1,5 +1,5 @@
 //
-//  WelcomeView.swift
+//  PrimalView.swift
 //  FlashCa
 //
 //  Created by Руслан Штыбаев on 10.01.2023.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class WelcomeView: UIView {
+final class PrimalView: UIView {
     
     private let containerView = UIView()
     
@@ -57,7 +57,7 @@ final class WelcomeView: UIView {
     }
 }
 
-extension WelcomeView {
+extension PrimalView {
     
     func setTitleForCurrentCategoryButton(_ title: String) {
         currentCategoryButton.setTitleCategory(title)
@@ -68,7 +68,7 @@ extension WelcomeView {
     }
 }
 
-private extension WelcomeView {
+private extension PrimalView {
     func addViews() {
         addSubview(containerView)
         containerView.addSubview(logoLabel)
