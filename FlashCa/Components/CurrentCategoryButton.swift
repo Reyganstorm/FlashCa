@@ -52,15 +52,15 @@ private extension CurrentCategoryButton {
         }
         
         titleCategoryLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(7)
+            make.top.equalToSuperview().offset(17)
             make.right.lessThanOrEqualTo(iconView.snp.left).offset(-6)
-            make.centerX.equalToSuperview()
+            make.left.equalToSuperview().offset(24)
         }
         
         categoryLabel.snp.makeConstraints { make in
             make.top.equalTo(titleCategoryLabel.snp.bottom).offset(5)
             make.right.left.equalTo(titleCategoryLabel)
-            make.bottom.equalToSuperview().offset(-7)
+            make.bottom.equalToSuperview().offset(-17)
             
         }
     }
@@ -76,7 +76,7 @@ private extension CurrentCategoryButton {
         
         titleCategoryLabel.textColor = Resources.Colors.activ
         titleCategoryLabel.textAlignment = .left
-        titleCategoryLabel.font = Resources.Fonts.helveticaRegular(with: 15)
+        titleCategoryLabel.font = Resources.Fonts.helveticaBold(with: 16)
         titleCategoryLabel.numberOfLines = 0
         titleCategoryLabel.text = "Choosed Category:"
         

@@ -22,6 +22,7 @@ class PrimalViewController: UIViewController, Routable {
         view.backgroundColor = .white
         baseView.setTitleForCurrentCategoryButton("Test History")
         baseView.setTargetForCategoriesButton(target: self, action: #selector(currentButtonDidTap))
+        baseView.setTargetForSettingButton(target: self, action: #selector(didTapSettinsButton))
     }
     
     override func viewWillLayoutSubviews() {
@@ -32,6 +33,10 @@ class PrimalViewController: UIViewController, Routable {
     
     @objc private func currentButtonDidTap() {
         presentCategories()
+    }
+    
+    @objc private func didTapSettinsButton() {
+        router?.pushSettingsVC()
     }
 }
 

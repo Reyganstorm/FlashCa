@@ -27,6 +27,11 @@ class MainRouter: NSObject {
         let vc = PrimalViewController()
         pushViewController(vc: vc, animated: true)
     }
+    
+    func pushSettingsVC() {
+        let vc = SettingsController()
+        pushViewController(vc: vc, animated: true)
+    }
 
     // MARK: - Pablic func
     

@@ -22,8 +22,10 @@ enum Resources {
             UIFont(name: "Helvetica", size: size) ?? UIFont.systemFont(ofSize: size)
         }
         
+        
+        
         static func helveticaBold(with size: CGFloat) -> UIFont {
-            UIFont(name: "HelveticaBold", size: size) ?? UIFont.systemFont(ofSize: size)
+            UIFont(name: "HelveticaBold", size: size) ?? UIFont.boldSystemFont(ofSize: size)
         }
     }
     

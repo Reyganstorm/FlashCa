@@ -30,10 +30,25 @@ final class PrimalView: UIView {
         return button
     }()
     
+    private let settingButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Settings", for: .normal)
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
+        button.titleLabel?.font = Resources.Fonts.helveticaBold(with: 16)
+        button.layer.cornerRadius = 14
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.3
+        button.layer.shadowOffset = .zero
+        button.layer.shadowRadius = 10
+        return button
+    }()
+    
     private let startButton: UIButton = {
         let button = UIButton()
         button.setTitle("Learn", for: .normal)
         button.backgroundColor = .black
+        button.titleLabel?.font = Resources.Fonts.helveticaBold(with: 16)
         button.titleLabel?.textColor = .white
         button.layer.cornerRadius = 14
         button.layer.shadowColor = UIColor.black.cgColor
@@ -66,6 +81,10 @@ extension PrimalView {
     func setTargetForCategoriesButton(target: Any, action: Selector) {
         currentCategoryButton.addTarget(target, action: action, for: .touchUpInside)
     }
+    
+    func setTargetForSettingButton(target: Any, action: Selector) {
+        settingButton.addTarget(target, action: action, for: .touchUpInside)
+    }
 }
 
 private extension PrimalView {
@@ -73,6 +92,7 @@ private extension PrimalView {
         addSubview(containerView)
         containerView.addSubview(logoLabel)
         containerView.addSubview(currentCategoryButton)
+        containerView.addSubview(settingButton)
         containerView.addSubview(startButton)
     }
     
@@ -80,23 +100,32 @@ private extension PrimalView {
         
         containerView.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.left.greaterThanOrEqualToSuperview().offset(30)
+            make.left.equalToSuperview()
         }
         
         logoLabel.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.left.right.equalToSuperview()
+            make.left.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
         
         currentCategoryButton.snp.makeConstraints { make in
             make.top.equalTo(logoLabel.snp.bottom).offset(5)
-            make.left.right.equalToSuperview()
-            make.width.greaterThanOrEqualTo(130)
+            make.left.equalToSuperview().offset(50)
+            make.centerX.equalToSuperview()
+        }
+        
+        settingButton.snp.makeConstraints { make in
+            make.top.equalTo(currentCategoryButton.snp.bottom).offset(10)
+            make.left.equalToSuperview().offset(50)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(45)
         }
         
         startButton.snp.makeConstraints { make in
-            make.top.equalTo(currentCategoryButton.snp.bottom).offset(10)
-            make.left.right.equalToSuperview()
+            make.top.equalTo(settingButton.snp.bottom).offset(10)
+            make.left.equalToSuperview().offset(50)
+            make.centerX.equalToSuperview()
             make.height.equalTo(45)
             make.bottom.equalToSuperview()
         }

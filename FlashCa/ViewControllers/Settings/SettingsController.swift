@@ -17,15 +17,29 @@ class SettingsController: UIViewController , Routable {
         "Account",
         "touch/face ID",
         "Language",
-        "About App"
+        "ThemeColor",
+        "About App",
+        "Guide line",
+        "AppVersion"
     ]
     
     
     // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        dissmisWithSwipe()
         view.backgroundColor = Resources.Colors.mainDark
         baseView.addTableViewDelegate(dataSource: self, delegate: self)
+    }
+    
+    func dissmisWithSwipe() {
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(back))
+        swipe.direction = .right
+        self.view.addGestureRecognizer(swipe)
+    }
+    
+    @objc func back() {
+        router?.back()
     }
     
     override func viewWillAppear(_ animated: Bool) {
