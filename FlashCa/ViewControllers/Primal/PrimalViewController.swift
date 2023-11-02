@@ -23,6 +23,7 @@ class PrimalViewController: UIViewController, Routable {
         baseView.setTitleForCurrentCategoryButton("Test History")
         baseView.setTargetForCategoriesButton(target: self, action: #selector(currentButtonDidTap))
         baseView.setTargetForSettingButton(target: self, action: #selector(didTapSettinsButton))
+        baseView.setTargetForStartButton(target: self, action: #selector(didTapLearn))
     }
     
     override func viewWillLayoutSubviews() {
@@ -37,6 +38,10 @@ class PrimalViewController: UIViewController, Routable {
     
     @objc private func didTapSettinsButton() {
         router?.pushSettingsVC()
+    }
+    
+    @objc private func didTapLearn() {
+        router?.pushLearnVC()
     }
 }
 

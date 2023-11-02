@@ -27,6 +27,8 @@
 		E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8849CDD2977EE5200CC414B /* ImageButton.swift */; };
 		E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */; };
 		E891D04D2A33C0C3007C3189 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E891D04C2A33C0C3007C3189 /* SnapKit */; };
+		E8E88AE62AF3A39E00AE42B8 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E88AE52AF3A39E00AE42B8 /* LearnView.swift */; };
+		E8E88AE82AF3A3AB00AE42B8 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E88AE72AF3A3AB00AE42B8 /* LearnViewController.swift */; };
 		E8F032AD296D6B950013E895 /* PrimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AC296D6B950013E895 /* PrimalView.swift */; };
 		E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */; };
 		E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F032B2296D702C0013E895 /* UIView + ext.swift */; };
@@ -57,6 +59,8 @@
 		E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCategoryView.swift; sourceTree = "<group>"; };
 		E8849CDD2977EE5200CC414B /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
+		E8E88AE52AF3A39E00AE42B8 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		E8E88AE72AF3A3AB00AE42B8 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		E8F032AC296D6B950013E895 /* PrimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimalView.swift; sourceTree = "<group>"; };
 		E8F032AF296D6FD20013E895 /* CurrentCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCategoryButton.swift; sourceTree = "<group>"; };
 		E8F032B2296D702C0013E895 /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
@@ -142,6 +146,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		E8E88AE42AF3A32800AE42B8 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				E8E88AE52AF3A39E00AE42B8 /* LearnView.swift */,
+				E8E88AE72AF3A3AB00AE42B8 /* LearnViewController.swift */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
 		E8EE99E82A350E1B00936051 /* Primal */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +229,7 @@
 		E8F8B07428F35B440038F702 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E8E88AE42AF3A32800AE42B8 /* Learning */,
 				E8EE99E82A350E1B00936051 /* Primal */,
 				E85CC9B4297F1ACE00C774D5 /* SoloCategory */,
 				E88E6CCA296ABA5C007B86E1 /* Categories */,
@@ -323,9 +337,11 @@
 				E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */,
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
 				E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */,
+				E8E88AE82AF3A3AB00AE42B8 /* LearnViewController.swift in Sources */,
 				E83360472986F04E00D85575 /* StabManager.swift in Sources */,
 				E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */,
 				E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */,
+				E8E88AE62AF3A39E00AE42B8 /* LearnView.swift in Sources */,
 				E84C1415296C742D0088EE43 /* Resources.swift in Sources */,
 				E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */,
 			);

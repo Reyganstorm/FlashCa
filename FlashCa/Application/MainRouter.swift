@@ -32,6 +32,12 @@ class MainRouter: NSObject {
         let vc = SettingsController()
         pushViewController(vc: vc, animated: true)
     }
+    
+    func pushLearnVC() {
+        let vc = LearnViewController()
+        vc.modalPresentationStyle = .fullScreen
+        pushViewController(vc: vc, animated: true)
+    }
 
     // MARK: - Pablic func
     

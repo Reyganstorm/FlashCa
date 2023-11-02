@@ -85,6 +85,10 @@ extension PrimalView {
     func setTargetForSettingButton(target: Any, action: Selector) {
         settingButton.addTarget(target, action: action, for: .touchUpInside)
     }
+    
+    func setTargetForStartButton(target: Any, action: Selector) {
+        startButton.addTarget(target, action: action, for: .touchUpInside)
+    }
 }
 
 private extension PrimalView {
