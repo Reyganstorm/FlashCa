@@ -7,7 +7,19 @@
 
 import UIKit
 
-final class CategoriesController: UIViewController {
+enum DecksFlowDirection {
+    case dissmis
+    case another
+}
+
+final class CategoriesController: UIViewController, FlowController {
+    
+    struct DecksData {
+        let flowDirection: DecksFlowDirection
+        let data: String?
+    }
+    
+    var completionHandler: ((DecksData) -> ())?
     
     var delegate: PrimalCategoryDelegete?
     
@@ -17,6 +29,7 @@ final class CategoriesController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         view.backgroundColor = .white
         baseView.setDelegateToCollection(dataSourse: self, delegate: self)
         baseView.addTargetToAddButton(target: self, action: #selector(addButtonDidTap))
@@ -31,10 +44,12 @@ final class CategoriesController: UIViewController {
 
 @objc private extension CategoriesController {
     func addButtonDidTap() {
-        let alert = UIAlertController(title: "Экран еще не готов", message: nil, preferredStyle: .actionSheet)
-        let destrAction = UIAlertAction(title: "Ок", style: .cancel)
-        alert.addAction(destrAction)
-        present(alert, animated: true)
+//        let alert = UIAlertController(title: "Экран еще не готов", message: nil, preferredStyle: .actionSheet)
+//        let destrAction = UIAlertAction(title: "Ок", style: .cancel)
+//        alert.addAction(destrAction)
+//        present(alert, animated: true)
+        
+        completionHandler?(DecksData(flowDirection: .dissmis, data: "Hihi"))
     }
 }
 

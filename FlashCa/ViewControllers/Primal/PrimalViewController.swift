@@ -11,9 +11,23 @@ protocol PrimalCategoryDelegete {
     func setSelectCategory(category: String)
 }
 
+enum PrimalFlowDirection {
+    case dissmis
+    case learn
+    case chart
+    case deck
+    case settings
+}
+
 class PrimalViewController: UIViewController, FlowController {
     
-    var completionHandler: ((String) -> ())?
+    struct PrimalData {
+        let flowDirection: PrimalFlowDirection
+        let data: String?
+    }
+    
+    var completionHandler: ((PrimalData) -> ())?
+    var dissmisHandler: (() -> ())?
     
     private let baseView: PrimalView = PrimalView()
     
@@ -33,7 +47,7 @@ class PrimalViewController: UIViewController, FlowController {
     }
     
     @objc private func currentButtonDidTap() {
-        presentCategories()
+        completionHandler?(PrimalData(flowDirection: .deck, data: "Hi"))
     }
     
     @objc private func didTapSettinsButton() {
@@ -42,27 +56,5 @@ class PrimalViewController: UIViewController, FlowController {
     
     @objc private func didTapLearn() {
 //        router?.pushLearnVC()
-    }
-}
-
-extension PrimalViewController: PrimalCategoryDelegete {
-    func setSelectCategory(category: String) {
-        baseView.setTitleForCurrentCategoryButton(category)
-    }
-}
-
-private extension PrimalViewController {
-    func presentCategories() {
-        let vc = CategoriesController()
-        vc.delegate = self
-//        vc.router = router
-        if #available(iOS 15.0, *) {
-            if let sheet = vc.sheetPresentationController {
-                sheet.detents = [ .large()]
-            }
-        } else {
-            vc.modalPresentationStyle = .pageSheet
-        }
-        present(vc, animated: true, completion: nil)
     }
 }

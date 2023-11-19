@@ -12,4 +12,8 @@ final class ViewFactory {
     func createPrimalViewController() -> PrimalViewController {
         return PrimalViewController()
     }
+    
+    func createDecksViewController() -> CategoriesController {
+        return CategoriesController()
+    }
 }

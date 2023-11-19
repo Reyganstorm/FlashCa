@@ -89,7 +89,7 @@ private extension CategoriesView {
         }
         
         addButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(25)
+            make.top.equalTo(safeAreaLayoutGuide)
             make.right.equalToSuperview().offset(-25)
             make.height.width.equalTo(50)
         }
