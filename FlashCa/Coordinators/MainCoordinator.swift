@@ -12,6 +12,8 @@ final class MainCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     
+    var data = ""
+    
     private var viewFactory = ViewFactory()
     
     init(navigationController: UINavigationController) {
@@ -25,6 +27,10 @@ final class MainCoordinator: Coordinator {
     
     func showStartViewController() {
         let vc = viewFactory.createPrimalViewController()
+        
+        vc.completionHandler = { [weak self] value in
+            self?.data = value
+        }
         
         navigationController.pushViewController(vc, animated: true)
     }

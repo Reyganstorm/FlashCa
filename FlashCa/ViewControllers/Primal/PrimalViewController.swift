@@ -11,7 +11,9 @@ protocol PrimalCategoryDelegete {
     func setSelectCategory(category: String)
 }
 
-class PrimalViewController: UIViewController {
+class PrimalViewController: UIViewController, FlowController {
+    
+    var completionHandler: ((String) -> ())?
     
     private let baseView: PrimalView = PrimalView()
     
