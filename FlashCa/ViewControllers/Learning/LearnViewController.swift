@@ -7,9 +7,7 @@
 
 import UIKit
 
-class LearnViewController: UIViewController, Routable {
-    
-    var router: MainRouter?
+class LearnViewController: UIViewController {
     
 //    private let baseView = LearnView()
 

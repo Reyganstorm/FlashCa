@@ -7,9 +7,8 @@
 
 import UIKit
 
-final class CategoriesController: UIViewController, Routable {
+final class CategoriesController: UIViewController {
     
-    var router: MainRouter?
     var delegate: PrimalCategoryDelegete?
     
     private let stabs = ["History", "Life cycles", "Async Await", "Love", "American Literature"]

@@ -5,29 +5,42 @@
 //  Created by Руслан Штыбаев on 09.10.2022.
 //
 
-import Foundation
 import UIKit
 
 
-class AppCoordinator: NSObject {
-    var window: UIWindow
-    var router: MainRouter?
+class AppCoordinator: Coordinator {
+    var flowComplitionHandler: CoordinatorCompletionHandler?
     
-    init(window: UIWindow?) {
-        self.window = window!
-        super.init()
-        startScreenFlow()
+    var navigationController: UINavigationController
+    
+    private var childCoordinators = [Coordinator]()
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
     
-    func didFinishLaunchingWithOptions(_ aplication: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? ) {
+    func start() {
+        
+        showRegistrationFlow()
         
     }
     
-    private func startScreenFlow() {
-        let navController = UINavigationController()
-        router = MainRouter(navigationController: navController)
-        router?.pushPrimalVC()
-        self.window.rootViewController = navController
-        self.window.makeKeyAndVisible()
+    private func showRegistrationFlow() {
+        let mainCoordinator = CoordinatorFactory().createMainCoordinator(navigationController: navigationController)
+        childCoordinators.append(mainCoordinator)
+        
+        mainCoordinator.flowComplitionHandler = { [weak self] in
+            self?.showMainFlow()
+        }
+        
+        mainCoordinator.start()
+    }
+    
+    private func showMainFlow() {
+        print("HI")
+        navigationController.setViewControllers([UIViewController()], animated: true)
+        
+        print(navigationController.viewControllers)
     }
 }
+

@@ -11,9 +11,7 @@ protocol PrimalCategoryDelegete {
     func setSelectCategory(category: String)
 }
 
-class PrimalViewController: UIViewController, Routable {
-    
-    var router: MainRouter?
+class PrimalViewController: UIViewController {
     
     private let baseView: PrimalView = PrimalView()
     
@@ -37,11 +35,11 @@ class PrimalViewController: UIViewController, Routable {
     }
     
     @objc private func didTapSettinsButton() {
-        router?.pushSettingsVC()
+//        router?.pushSettingsVC()
     }
     
     @objc private func didTapLearn() {
-        router?.pushLearnVC()
+//        router?.pushLearnVC()
     }
 }
 
@@ -55,7 +53,7 @@ private extension PrimalViewController {
     func presentCategories() {
         let vc = CategoriesController()
         vc.delegate = self
-        vc.router = router
+//        vc.router = router
         if #available(iOS 15.0, *) {
             if let sheet = vc.sheetPresentationController {
                 sheet.detents = [ .large()]

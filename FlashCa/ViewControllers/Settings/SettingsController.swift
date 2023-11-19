@@ -7,9 +7,7 @@
 
 import UIKit
 
-class SettingsController: UIViewController , Routable {
-    
-    var router: MainRouter?
+class SettingsController: UIViewController {
     
     private let baseView: SettingsView = SettingsView()
     
@@ -39,7 +37,7 @@ class SettingsController: UIViewController , Routable {
     }
     
     @objc func back() {
-        router?.back()
+//        router?.back()
     }
     
     override func viewWillAppear(_ animated: Bool) {
