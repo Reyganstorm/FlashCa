@@ -7,7 +7,18 @@
 
 import UIKit
 
-class SettingsController: UIViewController {
+enum SettingsFlowDirection {
+    case dissmis
+}
+
+class SettingsController: UIViewController, FlowController {
+    
+    struct SettingsData {
+        let flowDirection: SettingsFlowDirection
+        var data: String?
+    }
+    
+    var completionHandler: ((SettingsData) -> ())?
     
     private let baseView: SettingsView = SettingsView()
     
@@ -25,6 +36,7 @@ class SettingsController: UIViewController {
     // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         dissmisWithSwipe()
         view.backgroundColor = Resources.Colors.mainDark
         baseView.addTableViewDelegate(dataSource: self, delegate: self)
@@ -37,11 +49,12 @@ class SettingsController: UIViewController {
     }
     
     @objc func back() {
-//        router?.back()
+        completionHandler?(SettingsData(flowDirection: .dissmis))
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
         navigationItem.title = "Settings"
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()

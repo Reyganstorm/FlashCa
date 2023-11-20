@@ -22,6 +22,7 @@
 		E84A19922B0AAC93008FFDDC /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A19912B0AAC93008FFDDC /* CoordinatorFactory.swift */; };
 		E84A19952B0AAD41008FFDDC /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A19942B0AAD41008FFDDC /* MainCoordinator.swift */; };
 		E84A19972B0AB073008FFDDC /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A19962B0AB073008FFDDC /* FlowController.swift */; };
+		E84A199A2B0C099A008FFDDC /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A19992B0C099A008FFDDC /* ChartsViewController.swift */; };
 		E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */; };
 		E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE36297339920060AA95 /* CategoriesView.swift */; };
 		E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */; };
@@ -58,6 +59,7 @@
 		E84A19912B0AAC93008FFDDC /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		E84A19942B0AAD41008FFDDC /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		E84A19962B0AB073008FFDDC /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		E84A19992B0C099A008FFDDC /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFlashView.swift; sourceTree = "<group>"; };
 		E84ACE36297339920060AA95 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 				E84A19942B0AAD41008FFDDC /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E84A19982B0C098F008FFDDC /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				E84A19992B0C099A008FFDDC /* ChartsViewController.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		E85CC9B4297F1ACE00C774D5 /* SoloCategory */ = {
@@ -262,6 +272,7 @@
 		E8F8B07428F35B440038F702 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E84A19982B0C098F008FFDDC /* Charts */,
 				E8E88AE42AF3A32800AE42B8 /* Learning */,
 				E8EE99E82A350E1B00936051 /* Primal */,
 				E85CC9B4297F1ACE00C774D5 /* SoloCategory */,
@@ -304,7 +315,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					E8F8B05A28F35A980038F702 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -366,6 +377,7 @@
 				E8F5E007296D6A7400AAE3D0 /* PrimalViewController.swift in Sources */,
 				E8F8B05F28F35A980038F702 /* AppDelegate.swift in Sources */,
 				E816C65F2979466A002F3D62 /* StorageManager.swift in Sources */,
+				E84A199A2B0C099A008FFDDC /* ChartsViewController.swift in Sources */,
 				E816C662297946D7002F3D62 /* Category.swift in Sources */,
 				E8F032B3296D702C0013E895 /* UIView + ext.swift in Sources */,
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
@@ -433,6 +445,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -493,6 +506,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

@@ -24,6 +24,16 @@ final class MainCoordinator: Coordinator {
         showStartViewController()
     }
     
+    // MARK: - Dissmis last VC
+    func dissmisVC() {
+        navigationController.popViewController(animated: true)
+    }
+    
+    func show(_ vc: UIViewController) {
+        navigationController.modalTransitionStyle = .flipHorizontal
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
     
     func showStartViewController() {
         let vc = viewFactory.createPrimalViewController()
@@ -31,20 +41,45 @@ final class MainCoordinator: Coordinator {
         vc.completionHandler = { [weak self] value in
             switch value.flowDirection {
             case .dissmis:
+//                self?.dissmisVC()
                 print("dissmis")
             case .learn:
-                print("dissmis")
+                self?.showLearnViewController()
             case .chart:
-                print("dissmis")
+                self?.showChartsViewController()
             case .deck:
                 self?.showDecksViewController()
             case .settings:
-                print("dissmis")
+                self?.showSettingsViewController()
             }
             self?.data = value.data
         }
         
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func showSettingsViewController() {
+        let vc = viewFactory.createSettingsVC()
+        
+        vc.completionHandler = { [weak self] value in
+
+            switch value.flowDirection {
+            case .dissmis:
+                self?.dissmisVC()
+            }
+        }
+        
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func showLearnViewController() {
+        let vc = viewFactory.createLearningVC()
+        show(vc)
+    }
+    
+    func showChartsViewController() {
+        let vc = viewFactory.createChartsViewController()
+        show(vc)
     }
     
     
@@ -54,7 +89,7 @@ final class MainCoordinator: Coordinator {
         vc.completionHandler = { [weak self] value in
             switch value.flowDirection {
             case .dissmis:
-                self?.navigationController.popViewController(animated: true)
+                self?.dissmisVC()
             case .another:
                 print("dissmis")
             }

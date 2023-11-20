@@ -30,9 +30,23 @@ final class PrimalView: UIView {
         return button
     }()
     
-    private let settingButton: UIButton = {
+    private let chartsButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Settings", for: .normal)
+        button.setTitle("Charts", for: .normal)
+        button.backgroundColor = .white
+        button.setTitleColor(.black, for: .normal)
+        button.titleLabel?.font = Resources.Fonts.helveticaBold(with: 16)
+        button.layer.cornerRadius = 14
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.3
+        button.layer.shadowOffset = .zero
+        button.layer.shadowRadius = 10
+        return button
+    }()
+    
+    private let settingsButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "gearshape.fill")?.withRenderingMode(.alwaysOriginal).withTintColor(.black), for: .normal)
         button.backgroundColor = .white
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = Resources.Fonts.helveticaBold(with: 16)
@@ -55,7 +69,6 @@ final class PrimalView: UIView {
         button.layer.shadowOpacity = 0.3
         button.layer.shadowOffset = .zero
         button.layer.shadowRadius = 10
-        
         return button
     }()
     
@@ -82,8 +95,12 @@ extension PrimalView {
         currentCategoryButton.addTarget(target, action: action, for: .touchUpInside)
     }
     
-    func setTargetForSettingButton(target: Any, action: Selector) {
-        settingButton.addTarget(target, action: action, for: .touchUpInside)
+    func setTargetForChartsButton(target: Any, action: Selector) {
+        chartsButton.addTarget(target, action: action, for: .touchUpInside)
+    }
+    
+    func setTargetForSettingsButton(target: Any, action: Selector) {
+        settingsButton.addTarget(target, action: action, for: .touchUpInside)
     }
     
     func setTargetForStartButton(target: Any, action: Selector) {
@@ -96,7 +113,8 @@ private extension PrimalView {
         addSubview(containerView)
         containerView.addSubview(logoLabel)
         containerView.addSubview(currentCategoryButton)
-        containerView.addSubview(settingButton)
+        containerView.addSubview(chartsButton)
+        containerView.addSubview(settingsButton)
         containerView.addSubview(startButton)
     }
     
@@ -119,15 +137,22 @@ private extension PrimalView {
             make.centerX.equalToSuperview()
         }
         
-        settingButton.snp.makeConstraints { make in
+        settingsButton.snp.makeConstraints { make in
             make.top.equalTo(currentCategoryButton.snp.bottom).offset(10)
-            make.left.equalToSuperview().offset(50)
+            make.right.equalTo(currentCategoryButton)
+            make.height.width.equalTo(45)
+        }
+        
+        chartsButton.snp.makeConstraints { make in
+            make.top.equalTo(currentCategoryButton.snp.bottom).offset(10)
+            make.left.equalTo(currentCategoryButton)
             make.centerX.equalToSuperview()
+            make.right.equalTo(settingsButton.snp.left).offset(-10)
             make.height.equalTo(45)
         }
         
         startButton.snp.makeConstraints { make in
-            make.top.equalTo(settingButton.snp.bottom).offset(10)
+            make.top.equalTo(chartsButton.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(50)
             make.centerX.equalToSuperview()
             make.height.equalTo(45)

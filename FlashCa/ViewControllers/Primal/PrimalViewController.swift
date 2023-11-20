@@ -21,9 +21,9 @@ enum PrimalFlowDirection {
 
 class PrimalViewController: UIViewController, FlowController {
     
-    struct PrimalData {
-        let flowDirection: PrimalFlowDirection
-        let data: String?
+    struct PrimalData{
+        var flowDirection: PrimalFlowDirection
+        var data: String?
     }
     
     var completionHandler: ((PrimalData) -> ())?
@@ -31,13 +31,18 @@ class PrimalViewController: UIViewController, FlowController {
     
     private let baseView: PrimalView = PrimalView()
     
+    override func viewWillAppear(_ animated: Bool) {
+       self.navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         baseView.setTitleForCurrentCategoryButton("Test History")
         baseView.setTargetForCategoriesButton(target: self, action: #selector(currentButtonDidTap))
-        baseView.setTargetForSettingButton(target: self, action: #selector(didTapSettinsButton))
+        baseView.setTargetForChartsButton(target: self, action: #selector(didTapChartsButton))
         baseView.setTargetForStartButton(target: self, action: #selector(didTapLearn))
+        baseView.setTargetForSettingsButton(target: self, action: #selector(didTapSettinsButton))
     }
     
     override func viewWillLayoutSubviews() {
@@ -45,16 +50,25 @@ class PrimalViewController: UIViewController, FlowController {
         baseView.frame = view.bounds
         view.addSubview(baseView)
     }
+}
+
+
+// MARK: - Private button listeners
+@objc private extension PrimalViewController {
     
-    @objc private func currentButtonDidTap() {
+    func currentButtonDidTap() {
         completionHandler?(PrimalData(flowDirection: .deck, data: "Hi"))
     }
     
-    @objc private func didTapSettinsButton() {
-//        router?.pushSettingsVC()
+    func didTapSettinsButton() {
+        completionHandler?(PrimalData(flowDirection: .settings, data: "Hi"))
     }
     
-    @objc private func didTapLearn() {
-//        router?.pushLearnVC()
+    func didTapLearn() {
+        completionHandler?(PrimalData(flowDirection: .learn, data: "Hi"))
+    }
+    
+    func didTapChartsButton() {
+        completionHandler?(PrimalData(flowDirection: .chart, data: "Hi"))
     }
 }
