@@ -20,12 +20,10 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        
-        showRegistrationFlow()
-        
+        showMainFlow()
     }
     
-    private func showRegistrationFlow() {
+    private func showMainFlow () {
         let mainCoordinator = CoordinatorFactory().createMainCoordinator(navigationController: navigationController)
         childCoordinators.append(mainCoordinator)
         
@@ -34,13 +32,6 @@ class AppCoordinator: Coordinator {
         }
         
         mainCoordinator.start()
-    }
-    
-    private func showMainFlow() {
-        print("HI")
-        navigationController.setViewControllers([UIViewController()], animated: true)
-        
-        print(navigationController.viewControllers)
     }
 }
 

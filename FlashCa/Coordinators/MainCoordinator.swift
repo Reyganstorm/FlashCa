@@ -12,7 +12,7 @@ final class MainCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     
-    var data: String? = ""
+    private var data: String? = ""
     
     private var viewFactory = ViewFactory()
     
@@ -25,16 +25,19 @@ final class MainCoordinator: Coordinator {
     }
     
     // MARK: - Dissmis last VC
-    func dissmisVC() {
+    private func dissmisVC() {
         navigationController.popViewController(animated: true)
     }
     
-    func show(_ vc: UIViewController) {
+    private func show(_ vc: UIViewController) {
         navigationController.modalTransitionStyle = .flipHorizontal
         navigationController.pushViewController(vc, animated: true)
     }
+}
     
     
+    // MARK: - Presentation methods
+extension MainCoordinator {
     func showStartViewController() {
         let vc = viewFactory.createPrimalViewController()
         

@@ -7,12 +7,14 @@
 
 import UIKit
 
-class CoordinatorFactory {
+final class CoordinatorFactory {
     
+    //MARK: - App
     func createAppCoordinator(navigationController: UINavigationController) -> AppCoordinator {
         AppCoordinator(navigationController: navigationController)
     }
     
+    //MARK: - Main
     func createMainCoordinator(navigationController: UINavigationController) -> MainCoordinator {
         MainCoordinator(navigationController: navigationController)
     }
