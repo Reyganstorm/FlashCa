@@ -1,5 +1,5 @@
 //
-//  CategoriesController.swift
+//  DecksController.swift
 //  FlashCa
 //
 //  Created by Руслан Штыбаев on 08.01.2023.
@@ -12,7 +12,7 @@ enum DecksFlowDirection {
     case another
 }
 
-final class CategoriesController: UIViewController, FlowController {
+final class DecksController: UIViewController, FlowController {
     
     struct DecksData {
         let flowDirection: DecksFlowDirection
@@ -21,11 +21,39 @@ final class CategoriesController: UIViewController, FlowController {
     
     var completionHandler: ((DecksData) -> ())?
     
-    var delegate: PrimalCategoryDelegete?
+    private let decks = [
+        Deck(name: "History",
+             date: Date(),
+             cards: 16,
+             description: "Random words"
+            ),
+        
+        Deck(name: "Life cycles",
+             date: Date(),
+             cards: 4,
+             description: "Random words"
+            ),
+        
+        Deck(name: "Async Await",
+             date: Date(),
+             cards: 100,
+             description: "Random words"
+            ),
+        
+        Deck(name: "Love",
+             date: Date(),
+             cards: 20,
+             description: "Random words"
+            ),
+        
+        Deck(name: "American Literature",
+             date: Date(),
+             cards: 0,
+             description: "Random words"
+            )
+    ]
     
-    private let stabs = ["History", "Life cycles", "Async Await", "Love", "American Literature"]
-    
-    private let baseView: CategoriesView = CategoriesView()
+    private let baseView: DecksView = DecksView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,32 +70,26 @@ final class CategoriesController: UIViewController, FlowController {
     }
 }
 
-@objc private extension CategoriesController {
+@objc private extension DecksController {
     func addButtonDidTap() {
-//        let alert = UIAlertController(title: "Экран еще не готов", message: nil, preferredStyle: .actionSheet)
-//        let destrAction = UIAlertAction(title: "Ок", style: .cancel)
-//        alert.addAction(destrAction)
-//        present(alert, animated: true)
-        
         completionHandler?(DecksData(flowDirection: .dissmis, data: "Hihi"))
     }
 }
 
-extension CategoriesController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension DecksController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        stabs.count
+        decks.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoriesCollectionViewCell.identifier, for: indexPath) as! CategoriesCollectionViewCell
-        let stab = stabs[indexPath.item]
-        cell.setupCell(title: stab)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DecksCollectionViewCell.identifier, for: indexPath) as! DecksCollectionViewCell
+        let deck = decks[indexPath.item]
+        cell.setupCell(deck: deck)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let item = stabs[indexPath.item]
-        delegate?.setSelectCategory(category: item)
+//        let item = stabs[indexPath.item]
         dismiss(animated: true)
     }
 }

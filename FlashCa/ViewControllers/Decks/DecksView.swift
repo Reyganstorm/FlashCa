@@ -1,5 +1,5 @@
 //
-//  CategoriesView.swift
+//  DecksView.swift
 //  FlashCa
 //
 //  Created by Руслан Штыбаев on 14.01.2023.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CategoriesView: UIView {
+class DecksView: UIView {
 
     private let title: UILabel = {
         let label = UILabel()
@@ -44,7 +44,7 @@ class CategoriesView: UIView {
         collection.contentInset.left = 20
         collection.contentInset.right = 20
         collection.contentInset.top = 20
-        collection.register(CategoriesCollectionViewCell.self, forCellWithReuseIdentifier: CategoriesCollectionViewCell.identifier)
+        collection.register(DecksCollectionViewCell.self, forCellWithReuseIdentifier: DecksCollectionViewCell.identifier)
         collection.isScrollEnabled = false
         return collection
     }()
@@ -62,7 +62,7 @@ class CategoriesView: UIView {
     }
 }
 
-extension CategoriesView {
+extension DecksView {
     func addTargetToAddButton(target: Any, action: Selector) {
         addButton.addTarget(target, action: action, for: .touchUpInside)
     }
@@ -72,7 +72,7 @@ extension CategoriesView {
     }
 }
 
-private extension CategoriesView {
+private extension DecksView {
     func addViews() {
         addSubview(title)
         addSubview(addButton)
@@ -111,7 +111,7 @@ private extension CategoriesView {
     }
 }
 
-extension CategoriesView {
+extension DecksView {
     // MARK: - CollectionView
     func setDelegateToCollection(dataSourse: UICollectionViewDataSource, delegate: UICollectionViewDelegate) {
         collectionView.dataSource = dataSourse

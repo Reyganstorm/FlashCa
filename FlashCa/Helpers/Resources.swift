@@ -38,4 +38,8 @@ enum Resources {
             static let edit = UIImage(systemName: "square.and.pencil")
         }
     }
+    
+    enum Size {
+        static let width = UIScreen.main.bounds.width
+    }
 }

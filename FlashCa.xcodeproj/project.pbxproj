@@ -23,15 +23,17 @@
 		E84A19952B0AAD41008FFDDC /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A19942B0AAD41008FFDDC /* MainCoordinator.swift */; };
 		E84A19972B0AB073008FFDDC /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A19962B0AB073008FFDDC /* FlowController.swift */; };
 		E84A199A2B0C099A008FFDDC /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A19992B0C099A008FFDDC /* ChartsViewController.swift */; };
+		E84A199E2B0D2ED7008FFDDC /* CounterCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A199D2B0D2ED7008FFDDC /* CounterCardsView.swift */; };
+		E84A19A02B0D2F6F008FFDDC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A199F2B0D2F6F008FFDDC /* BaseView.swift */; };
 		E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */; };
-		E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE36297339920060AA95 /* CategoriesView.swift */; };
+		E84ACE37297339920060AA95 /* DecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE36297339920060AA95 /* DecksView.swift */; };
 		E84ACE3929733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */; };
-		E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */; };
+		E84ACE3B29733CC70060AA95 /* DecksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ACE3A29733CC70060AA95 /* DecksCollectionViewCell.swift */; };
 		E84C1415296C742D0088EE43 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C1414296C742D0088EE43 /* Resources.swift */; };
 		E85CC9B6297F1AFA00C774D5 /* SoloCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CC9B5297F1AFA00C774D5 /* SoloCategoryController.swift */; };
 		E85CC9B8297F1B0A00C774D5 /* SoloCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */; };
 		E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8849CDD2977EE5200CC414B /* ImageButton.swift */; };
-		E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */; };
+		E88E6CCC296ABADD007B86E1 /* DecksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E6CCB296ABADD007B86E1 /* DecksController.swift */; };
 		E891D04D2A33C0C3007C3189 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E891D04C2A33C0C3007C3189 /* SnapKit */; };
 		E8E88AE62AF3A39E00AE42B8 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E88AE52AF3A39E00AE42B8 /* LearnView.swift */; };
 		E8E88AE82AF3A3AB00AE42B8 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E88AE72AF3A3AB00AE42B8 /* LearnViewController.swift */; };
@@ -60,15 +62,17 @@
 		E84A19942B0AAD41008FFDDC /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		E84A19962B0AB073008FFDDC /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		E84A19992B0C099A008FFDDC /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		E84A199D2B0D2ED7008FFDDC /* CounterCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCardsView.swift; sourceTree = "<group>"; };
+		E84A199F2B0D2F6F008FFDDC /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFlashView.swift; sourceTree = "<group>"; };
-		E84ACE36297339920060AA95 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		E84ACE36297339920060AA95 /* DecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksView.swift; sourceTree = "<group>"; };
 		E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		E84ACE3A29733CC70060AA95 /* DecksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksCollectionViewCell.swift; sourceTree = "<group>"; };
 		E84C1414296C742D0088EE43 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		E85CC9B5297F1AFA00C774D5 /* SoloCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCategoryController.swift; sourceTree = "<group>"; };
 		E85CC9B7297F1B0A00C774D5 /* SoloCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCategoryView.swift; sourceTree = "<group>"; };
 		E8849CDD2977EE5200CC414B /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
-		E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
+		E88E6CCB296ABADD007B86E1 /* DecksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksController.swift; sourceTree = "<group>"; };
 		E8E88AE52AF3A39E00AE42B8 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		E8E88AE72AF3A3AB00AE42B8 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		E8F032AC296D6B950013E895 /* PrimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimalView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			children = (
 				E84A198C2B0AAB9B008FFDDC /* Coordinator.swift */,
 				E84A19962B0AB073008FFDDC /* FlowController.swift */,
+				E84A199F2B0D2F6F008FFDDC /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -164,18 +169,19 @@
 				E84A9BC7296F27F10036B3BF /* RandomFlashView.swift */,
 				E84ACE3829733C2C0060AA95 /* LeftAlignedCollectionViewFlowLayout.swift */,
 				E8849CDD2977EE5200CC414B /* ImageButton.swift */,
+				E84A199D2B0D2ED7008FFDDC /* CounterCardsView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		E88E6CCA296ABA5C007B86E1 /* Categories */ = {
+		E88E6CCA296ABA5C007B86E1 /* Decks */ = {
 			isa = PBXGroup;
 			children = (
-				E88E6CCB296ABADD007B86E1 /* CategoriesController.swift */,
-				E84ACE36297339920060AA95 /* CategoriesView.swift */,
-				E84ACE3A29733CC70060AA95 /* CategoriesCollectionViewCell.swift */,
+				E88E6CCB296ABADD007B86E1 /* DecksController.swift */,
+				E84ACE36297339920060AA95 /* DecksView.swift */,
+				E84ACE3A29733CC70060AA95 /* DecksCollectionViewCell.swift */,
 			);
-			path = Categories;
+			path = Decks;
 			sourceTree = "<group>";
 		};
 		E8E5BB832900968B0049A07A /* Settings */ = {
@@ -276,7 +282,7 @@
 				E8E88AE42AF3A32800AE42B8 /* Learning */,
 				E8EE99E82A350E1B00936051 /* Primal */,
 				E85CC9B4297F1ACE00C774D5 /* SoloCategory */,
-				E88E6CCA296ABA5C007B86E1 /* Categories */,
+				E88E6CCA296ABA5C007B86E1 /* Decks */,
 				E8E5BB832900968B0049A07A /* Settings */,
 			);
 			path = ViewControllers;
@@ -361,7 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E88E6CCC296ABADD007B86E1 /* CategoriesController.swift in Sources */,
+				E88E6CCC296ABADD007B86E1 /* DecksController.swift in Sources */,
 				E84251BA2968BDDB005F7BCB /* SettingsTVCell.swift in Sources */,
 				E8F032AD296D6B950013E895 /* PrimalView.swift in Sources */,
 				E8849CDE2977EE5200CC414B /* ImageButton.swift in Sources */,
@@ -370,6 +376,7 @@
 				E85CC9B8297F1B0A00C774D5 /* SoloCategoryView.swift in Sources */,
 				E84A198D2B0AAB9B008FFDDC /* Coordinator.swift in Sources */,
 				E83360492986F17400D85575 /* UserDefaultsService.swift in Sources */,
+				E84A19A02B0D2F6F008FFDDC /* BaseView.swift in Sources */,
 				E816C664297946E4002F3D62 /* Card.swift in Sources */,
 				E85CC9B6297F1AFA00C774D5 /* SoloCategoryController.swift in Sources */,
 				E84A9BC8296F27F10036B3BF /* RandomFlashView.swift in Sources */,
@@ -383,12 +390,13 @@
 				E8419E5028FC693C0069B2A4 /* SettingsController.swift in Sources */,
 				E84A19922B0AAC93008FFDDC /* CoordinatorFactory.swift in Sources */,
 				E84A19902B0AAC4C008FFDDC /* ViewFactory.swift in Sources */,
-				E84ACE3B29733CC70060AA95 /* CategoriesCollectionViewCell.swift in Sources */,
+				E84ACE3B29733CC70060AA95 /* DecksCollectionViewCell.swift in Sources */,
 				E8E88AE82AF3A3AB00AE42B8 /* LearnViewController.swift in Sources */,
 				E84A19972B0AB073008FFDDC /* FlowController.swift in Sources */,
+				E84A199E2B0D2ED7008FFDDC /* CounterCardsView.swift in Sources */,
 				E83360472986F04E00D85575 /* StabManager.swift in Sources */,
 				E84251B82968BD21005F7BCB /* SettingsView.swift in Sources */,
-				E84ACE37297339920060AA95 /* CategoriesView.swift in Sources */,
+				E84ACE37297339920060AA95 /* DecksView.swift in Sources */,
 				E8E88AE62AF3A39E00AE42B8 /* LearnView.swift in Sources */,
 				E84C1415296C742D0088EE43 /* Resources.swift in Sources */,
 				E8F032B0296D6FD20013E895 /* CurrentCategoryButton.swift in Sources */,

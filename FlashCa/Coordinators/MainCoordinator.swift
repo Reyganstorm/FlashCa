@@ -39,7 +39,7 @@ final class MainCoordinator: Coordinator {
     // MARK: - Presentation methods
 extension MainCoordinator {
     func showStartViewController() {
-        let vc = viewFactory.createPrimalViewController()
+        let vc = viewFactory.createPrimalVC()
         
         vc.completionHandler = { [weak self] value in
             switch value.flowDirection {
@@ -81,13 +81,12 @@ extension MainCoordinator {
     }
     
     func showChartsViewController() {
-        let vc = viewFactory.createChartsViewController()
+        let vc = viewFactory.createChartsVC()
         show(vc)
     }
     
-    
     func showDecksViewController() {
-        let vc = viewFactory.createDecksViewController()
+        let vc = viewFactory.createDecksVC()
         
         vc.completionHandler = { [weak self] value in
             switch value.flowDirection {

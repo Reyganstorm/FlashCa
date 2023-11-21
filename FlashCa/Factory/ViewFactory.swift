@@ -10,17 +10,17 @@ import UIKit
 final class ViewFactory {
     
     // MARK: Primal
-    func createPrimalViewController() -> PrimalViewController {
+    func createPrimalVC() -> PrimalViewController {
         return PrimalViewController()
     }
     
     // MARK: Decks
-    func createDecksViewController() -> CategoriesController {
-        return CategoriesController()
+    func createDecksVC() -> DecksController {
+        return DecksController()
     }
     
     // MARK: Charts
-    func createChartsViewController() -> ChartsViewController {
+    func createChartsVC() -> ChartsViewController {
         return ChartsViewController()
     }
     

@@ -29,7 +29,7 @@ final class RandomFlashView: UIView {
 }
 
 
-private extension RandomFlashView {
+extension RandomFlashView: BaseView {
     func addViews() {
         addSubview(randomButton)
         addSubview(settingsButton)
